@@ -1,1486 +1,1886 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>NEOM Dental Care</title>
+    <meta name="description" content />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-   <meta charset="utf-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title> NEOM Dental Care </title>
-   <meta name="description" content="">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.png in the root directory -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/logo/favicon.png"
+    />
 
-   <!-- Place favicon.png in the root directory -->
-   <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/custom-animation.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/nestro-core.css" />
+    <link rel="stylesheet" href="assets/css/nestro-unit.css" />
+    <link rel="stylesheet" href="assets/css/nestro-custom.css" />
+  </head>
 
-   <!-- CSS here -->
-   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-   <link rel="stylesheet" href="assets/css/spacing.css">
-   <link rel="stylesheet" href="assets/css/custom-animation.css">
-   <link rel="stylesheet" href="assets/css/nice-select.css">
-   <link rel="stylesheet" href="assets/css/nestro-core.css">
-   <link rel="stylesheet" href="assets/css/nestro-unit.css">
-   <link rel="stylesheet" href="assets/css/nestro-custom.css">
-
-</head>
-
-<body>
-
-   <!-- pre loader area start -->
-   <div id="loading">
+  <body>
+    <!-- pre loader area start -->
+    <div id="loading">
       <div id="loading-center">
-         <div id="loading-center-absolute">
-            <div class="object"></div>
-            <div class="object"></div>
-            <div class="object"></div>
-            <div class="object"></div>
-            <div class="object"></div>
-            <div class="object"></div>
-            <div class="object"></div>
-            <div class="object"></div>
-            <div class="object"></div>
-            <div class="object"></div>
-            <div class="loader-text"> Loading ... </div>
-         </div>
+        <div id="loading-center-absolute">
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="loader-text">Loading ...</div>
+        </div>
       </div>
-   </div>
-   <!-- pre loader area end -->
+    </div>
+    <!-- pre loader area end -->
 
-   <!-- search popup start -->
-   <div class="tp-search-area">
+    <!-- search popup start -->
+    <div class="tp-search-area">
       <div class="container">
-         <div class="row">
-            <div class="col-xxl-12">
-               <div class="tp-search__wrapper">
-                  <div class="tp-search__top d-flex justify-content-between align-items-center">
-                     <div class="tp-search__logo">
-                        <a href="index.html">
-                           <img src="assets/img/logo/logo.png" alt="logo">
-                        </a>
-                     </div>
-                     <div class="tp-search__close">
-                        <button type="button" class="tp-search__close-btn tp-search-close-btn">
-                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                 stroke-linejoin="round" />
-                              <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                 stroke-linejoin="round" />
-                           </svg>
-                        </button>
-                     </div>
-                  </div>
-                  <div class="tp-search__form">
-                     <form action="#">
-                        <div class="tp-search__input">
-                           <input class="search-input-field" type="text" placeholder="Type here to search...">
-                           <span class="search-focus-border"></span>
-                           <button type="submit">
-                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z"
-                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                 <path d="M19.0002 19.0002L17.2002 17.2002" stroke="currentColor" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                              </svg>
-                           </button>
-                        </div>
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div class="search-popup-overlay"></div>
-   <!-- search popup end -->
-
-   <!-- start offcanvas area  -->
-   <div class="tp-offcanvas__area">
-      <div class="tp-offcanvas__wrapper">
-         <div class="tp-offcanvas__close">
-            <button class="tp-offcanvas__close-btn tp-offcanvas-close-btn">
-               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                     stroke-linejoin="round"></path>
-                  <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                     stroke-linejoin="round"></path>
-               </svg>
-            </button>
-         </div>
-         <div class="tp-offcanvas__content">
-            <div class="tp-offcanvas__top mb-50 d-flex justify-content-between align-items-center">
-               <div class="tp-offcanvas__logo">
+        <div class="row">
+          <div class="col-xxl-12">
+            <div class="tp-search__wrapper">
+              <div
+                class="tp-search__top d-flex justify-content-between align-items-center"
+              >
+                <div class="tp-search__logo">
                   <a href="index.html">
-                     <img src="assets/img/logo/logo-white.png" alt="logo">
+                    <img
+                      style="width: 100px"
+                      src="assets/img/logo/logo.png"
+                      alt="logo"
+                    />
                   </a>
-               </div>
+                </div>
+                <div class="tp-search__close">
+                  <button
+                    type="button"
+                    class="tp-search__close-btn tp-search-close-btn"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17 1L1 17"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1 1L17 17"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="tp-search__form">
+                <form action="#">
+                  <div class="tp-search__input">
+                    <input
+                      class="search-input-field"
+                      type="text"
+                      placeholder="Type here to search..."
+                    />
+                    <span class="search-focus-border"></span>
+                    <button type="submit">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M19.0002 19.0002L17.2002 17.2002"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
-            <div class="tp-main-menu-mobile d-xl-none">
-               <nav class="tp-main-menu-content">
-                  <ul>
-                     <li class="has-dropdown"><a href="index.html"> Home </a>
-                        <ul class="tp-submenu">
-                           <li>
-                              <a href="index.html"> Home - Main </a>
-                           </li>
-                           <li>
-                              <a href="index-2.html"> Home - Slider </a>
-                           </li>
-                           <li>
-                              <a href="index-3.html"> Home - Video </a>
-                           </li>
-                        </ul>
-                     </li>
-                     <li><a href="about.html"> About Us </a></li>
-                     <li class="has-dropdown"><a href="services.html"> Our Services </a>
-                        <ul class="tp-submenu">
-                           <li>
-                              <a href="orthodontics.html"> Orthodontics </a>
-                           </li>
-                           <li>
-                              <a href="pediatric-dentist.html"> Pediatric Dentist </a>
-                           </li>
-                           <li>
-                              <a href="children-dentistry.html"> Children’s Dentistry </a>
-                           </li>
-                           <li>
-                              <a href="dental-implants.html"> Dental Implants </a>
-                           </li>
-                           <li>
-                              <a href="cosmetic-dentistry.html"> Cosmetic Dentistry </a>
-                           </li>
-                        </ul>
-                     </li>
-                     <li class="has-dropdown"><a href="#"> Pages </a>
-                        <ul class="tp-submenu">
-                           <li>
-                              <a href="blog.html"> Blog </a>
-                           </li>
-                           <li class="has-dropdown">
-                              <a href="team.html"> Doctors </a>
-                              <ul class="tp-submenu">
-                                 <li>
-                                    <a href="alex-casta.html"> Dr. Alex Casta </a>
-                                 </li>
-                                 <li>
-                                    <a href="james-smithon.html"> Dr. James Smithon </a>
-                                 </li>
-                                 <li>
-                                    <a href="rolex-botano.html"> Dr. Rolex Botano </a>
-                                 </li>
-                                 <li>
-                                    <a href="lexaus-robathom.html"> Dr. Lexaus Robathom </a>
-                                 </li>
-                              </ul>
-                           </li>
-                           <li> <a href="appointment.html"> Appointment </a></li>
-                           <li>
-                              <a href="faq.html"> FAQS </a>
-                           </li>
-                           <li>
-                              <a href="testimonials.html"> Testimonials </a>
-                           </li>
-                        </ul>
-                     </li>
-                     <li><a href="contact.html"> Contact Us </a></li>
-                  </ul>
-               </nav>
-            </div>
-            <div class="tp-mobile-menu-pos"></div>
-            <div class="tp-offcanvas__popup">
-               <p>Web designing in a powerful way of just not an only professions. We have tendency to believe the idea
-                  that smart looking .</p>
-            </div>
-            <div class="tp-offcanvas__contact">
-               <h4 class="tp-offcanvas__title">Contacts</h4>
-               <div class="tp-offcanvas__contact-content d-flex">
-                  <div class="tp-offcanvas__contact-content-icon">
-                     <i class="far fa-location"></i>
-                  </div>
-                  <div class="tp-offcanvas__contact-content-content">
-                     <a
-                        href="https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1">86
-                        Road Broklyn Street, 600 </a>
-                  </div>
-               </div>
-               <div class="tp-offcanvas__contact-content d-flex">
-                  <div class="tp-offcanvas__contact-content-icon">
-                     <i class="fas fa-paper-plane"></i>
-                  </div>
-                  <div class="tp-offcanvas__contact-content-content">
-                     <a href="mailto:needhelp@company.com"> Needhelp@company.com </a>
-                  </div>
-               </div>
-               <div class="tp-offcanvas__contact-content d-flex">
-                  <div class="tp-offcanvas__contact-content-icon">
-                     <i class="fas fa-phone-alt"></i>
-                  </div>
-                  <div class="tp-offcanvas__contact-content-content">
-                     <a href="tel:01310-069824"> +92 666 888 0000</a>
-                  </div>
-               </div>
-            </div>
-            <div class="tp-offcanvas__social">
-               <a class="icon facebook" href="#"><i class="fab fa-facebook-f"></i></a>
-               <a class="icon twitter" href="#"><i class="fab fa-twitter"></i></a>
-               <a class="icon youtube" href="#"><i class="fab fa-youtube"></i></a>
-               <a class="icon linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <div class="body-overlay"></div>
-   <!-- start offcanvas end  -->
+    </div>
+    <div class="search-popup-overlay"></div>
+    <!-- search popup end -->
 
-   <!-- back to top start -->
-   <div class="back-to-top-wrapper">
+    <!-- start offcanvas area  -->
+    <div class="tp-offcanvas__area">
+      <div class="tp-offcanvas__wrapper">
+        <div class="tp-offcanvas__close">
+          <button class="tp-offcanvas__close-btn tp-offcanvas-close-btn">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 1L1 11"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M1 1L11 11"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="tp-offcanvas__content">
+          <div
+            class="tp-offcanvas__top mb-50 d-flex justify-content-between align-items-center"
+          >
+            <div class="tp-offcanvas__logo">
+              <a href="index.html">
+                <img src="assets/img/logo/logo-white.png" alt="logo" />
+              </a>
+            </div>
+          </div>
+          <div class="tp-main-menu-mobile d-xl-none">
+            <nav class="tp-main-menu-content">
+              <ul>
+               
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="about.html"> About Us </a></li>
+                <li><a href="about.html"> Services </a></li>
+                <li><a href="contact.html"> Contact Us </a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="tp-mobile-menu-pos"></div>
+          <!-- <div class="tp-offcanvas__popup">
+            <p>
+              Web designing in a powerful way of just not an only professions.
+              We have tendency to believe the idea that smart looking .
+            </p>
+          </div> -->
+          <div class="tp-offcanvas__contact">
+            <h4 class="tp-offcanvas__title">Contacts</h4>
+            <div class="tp-offcanvas__contact-content d-flex">
+              <div class="tp-offcanvas__contact-content-icon">
+                <i class="far fa-location"></i>
+              </div>
+              <div class="tp-offcanvas__contact-content-content">
+                <a
+                  href=""
+                  >NEOM Dental Care, Hiba tower, Calicut Rd, behind SBI, Valanchery, Kavumpuram, Kerala 676552
+                </a>
+              </div>
+            </div>
+            <!-- <div class="tp-offcanvas__contact-content d-flex">
+              <div class="tp-offcanvas__contact-content-icon">
+                <i class="fas fa-paper-plane"></i>
+              </div>
+              <div class="tp-offcanvas__contact-content-content">
+                <a href="mailto:needhelp@company.com"> Needhelp@company.com </a>
+              </div>
+            </div> -->
+            <div class="tp-offcanvas__contact-content d-flex">
+              <div class="tp-offcanvas__contact-content-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="tp-offcanvas__contact-content-content">
+                <a href="tel:08592000067"> 085920 00067</a>
+              </div>
+            </div>
+          </div>
+          <div class="tp-offcanvas__social">
+            <a class="icon facebook" href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="icon twitter" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="icon youtube" href="#"><i class="fab fa-youtube"></i></a>
+            <a class="icon linkedin" href="#"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body-overlay"></div>
+    <!-- start offcanvas end  -->
+
+    <!-- back to top start -->
+    <div class="back-to-top-wrapper">
       <button id="back_to_top" type="button" class="back-to-top-btn">
-         <i class="fa-light fa-angle-up"></i>
+        <i class="fa-light fa-angle-up"></i>
       </button>
-   </div>
-   <!-- back to top end -->
+    </div>
+    <!-- back to top end -->
 
-   <header class="z-index-2">
-      <div id="header-sticky" class="tp-header-top-area tp-header__style-1">
-         <div class="container-1850">
-            <div class="row align-items-center g-0">
-               <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
-                  <div class="tp-main__logo">
-                     <a href="index.html">
-                        <img src="assets/img/logo/logo.png" alt="">
-                     </a>
-                  </div>
-               </div>
-               <div class="col-xl-6 col-lg-6 d-none d-xl-block">
-                  <div class="tp-main__menu d-flex justify-content-center">
-                     <nav>
-                        <ul>
-                           <li class="has-dropdown"><a href="index.html"> Home </a>
-                              <ul class="tp-submenu">
-                                 <li>
-                                    <a href="index.html"> Home - Main </a>
-                                 </li>
-                                 <li>
-                                    <a href="index-2.html"> Home - Slider </a>
-                                 </li>
-                                 <li>
-                                    <a href="index-3.html"> Home - Video </a>
-                                 </li>
-                              </ul>
-                           </li>
-                           <li><a href="about.html"> About Us </a></li>
-                           <li class="has-dropdown"><a href="services.html"> Our Services </a>
-                              <ul class="tp-submenu">
-                                 <li>
-                                    <a href="orthodontics.html"> Orthodontics </a>
-                                 </li>
-                                 <li>
-                                    <a href="pediatric-dentist.html"> Pediatric Dentist </a>
-                                 </li>
-                                 <li>
-                                    <a href="children-dentistry.html"> Children’s Dentistry </a>
-                                 </li>
-                                 <li>
-                                    <a href="dental-implants.html"> Dental Implants </a>
-                                 </li>
-                                 <li>
-                                    <a href="cosmetic-dentistry.html"> Cosmetic Dentistry </a>
-                                 </li>
-                              </ul>
-                           </li>
-                           <li class="has-dropdown"><a href="#"> Pages </a>
-                              <ul class="tp-submenu">
-                                 <li>
-                                    <a href="blog.html"> Blog </a>
-                                 </li>
-                                 <li class="has-dropdown">
-                                    <a href="team.html"> Doctors </a>
-                                    <ul class="tp-submenu">
-                                       <li>
-                                          <a href="alex-casta.html"> Dr. Alex Casta </a>
-                                       </li>
-                                       <li>
-                                          <a href="james-smithon.html"> Dr. James Smithon </a>
-                                       </li>
-                                       <li>
-                                          <a href="rolex-botano.html"> Dr. Rolex Botano </a>
-                                       </li>
-                                       <li>
-                                          <a href="lexaus-robathom.html"> Dr. Lexaus Robathom </a>
-                                       </li>
-                                    </ul>
-                                 </li>
-                                 <li> <a href="appointment.html"> Appointment </a></li>
-                                 <li>
-                                    <a href="faq.html"> FAQS </a>
-                                 </li>
-                                 <li>
-                                    <a href="testimonials.html"> Testimonials </a>
-                                 </li>
-                              </ul>
-                           </li>
-                           <li><a href="contact.html"> Contact Us </a></li>
-                        </ul>
-                     </nav>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6 d-none d-xl-block">
-                  <div class="tp-header__right d-flex justify-content-end">
-                     <div class="tp-header__action">
-                        <ul>
-                           <li>
-                              <button class="tp-header__search-btn tp-search-open-btn">
-                                 <span>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                       <path
-                                          d="M18.9007 17.5992L16.3065 15.0142C17.7129 13.2768 18.3989 11.066 18.2232 8.83766C18.0475 6.60934 17.0234 4.5334 15.3622 3.0379C13.7009 1.5424 11.5291 0.741378 9.29467 0.800002C7.0602 0.858626 4.93341 1.77243 3.35286 3.35298C1.77231 4.93353 0.858504 7.06032 0.79988 9.29479C0.741256 11.5293 1.54228 13.701 3.03778 15.3623C4.53328 17.0235 6.60922 18.0476 8.83754 18.2233C11.0659 18.399 13.2767 17.713 15.014 16.3067L17.599 18.9008C17.6843 18.9867 17.7856 19.0549 17.8973 19.1015C18.0091 19.148 18.1289 19.172 18.2499 19.172C18.3709 19.172 18.4907 19.148 18.6024 19.1015C18.7141 19.0549 18.8155 18.9867 18.9007 18.9008C18.9866 18.8156 19.0548 18.7142 19.1014 18.6025C19.1479 18.4908 19.1719 18.371 19.1719 18.25C19.1719 18.129 19.1479 18.0092 19.1014 17.8975C19.0548 17.7858 18.9866 17.6844 18.9007 17.5992ZM2.66655 9.54167C2.66655 8.18192 3.06976 6.85271 3.82519 5.72212C4.58063 4.59153 5.65436 3.71035 6.9106 3.19C8.16684 2.66964 9.54917 2.5335 10.8828 2.79877C12.2164 3.06404 13.4414 3.71882 14.4029 4.68031C15.3644 5.64179 16.0192 6.8668 16.2844 8.20042C16.5497 9.53404 16.4136 10.9164 15.8932 12.1726C15.3729 13.4289 14.4917 14.5026 13.3611 15.258C12.2305 16.0135 10.9013 16.4167 9.54155 16.4167C7.71818 16.4167 5.9695 15.6923 4.68019 14.403C3.39087 13.1137 2.66655 11.365 2.66655 9.54167Z" />
-                                    </svg>
-                                 </span>
-                              </button>
-                           </li>
-                           <li>
-                              <a href="contact.html" class="tp-btn__1 tp-btn-bg-1">Schedule a Checkup
-                                 <span class="icon">
-                                    <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                                       <mask id="mask0_50_218" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
-                                          y="0" width="14" height="14">
-                                          <rect width="14" height="14" fill="#D9D9D9" />
-                                       </mask>
-                                       <g mask="url(#mask0_50_218)">
-                                          <path fill-rule="evenodd" clip-rule="evenodd"
-                                             d="M13.3676 1.63776L1.63768 13.3676L0.632266 12.3622L12.3621 0.632339L13.3676 1.63776Z" />
-                                          <path fill-rule="evenodd" clip-rule="evenodd"
-                                             d="M11.8594 1.13503C9.49528 3.49911 9.64207 7.51072 11.8594 9.728L12.3621 10.2307L13.3675 9.22529L12.8648 8.72259C11.181 7.03885 11.0771 3.92808 12.8648 2.14045L13.3675 1.63774L12.3621 0.632325L11.8594 1.13503Z" />
-                                          <path fill-rule="evenodd" clip-rule="evenodd"
-                                             d="M12.8648 2.14047C10.5008 4.50454 6.48916 4.35775 4.27188 2.14047L3.76917 1.63776L4.77458 0.632339L5.27729 1.13505C6.96036 2.81812 10.0718 2.92268 11.8594 1.13505L12.3621 0.632339L13.3676 1.63776L12.8648 2.14047Z" />
-                                       </g>
-                                    </svg>
-                                 </span>
-                              </a>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-6 col-md-6 col-sm-6 col-6 d-xl-none d-lg-block">
-                  <div class="tp-header__right d-flex justify-content-end">
-                     <div class="tp-header__action">
-                        <ul>
-                           <li>
-                              <button class="tp-header__burs-btn tp-offcanvas-open-btn">
-                                 <span>
-                                    <svg width="28" height="26" viewBox="0 0 28 26" xmlns="http://www.w3.org/2000/svg">
-                                       <ellipse cx="2.39023" cy="2.39022" rx="2.39023" ry="2.39022" />
-                                       <ellipse cx="13.9137" cy="2.39022" rx="2.39023" ry="2.39022"
-                                          fill-opacity="0.7" />
-                                       <ellipse cx="25.441" cy="2.39022" rx="2.39023" ry="2.39022" fill-opacity="0.7" />
-                                       <ellipse cx="2.39023" cy="12.6339" rx="2.39023" ry="2.39022"
-                                          fill-opacity="0.7" />
-                                       <ellipse cx="13.9137" cy="12.6349" rx="2.39023" ry="2.39022" />
-                                       <ellipse cx="25.441" cy="12.6349" rx="2.39023" ry="2.39022" fill-opacity="0.7" />
-                                       <ellipse cx="2.39023" cy="23.0484" rx="2.39023" ry="2.39022"
-                                          fill-opacity="0.7" />
-                                       <ellipse cx="13.9996" cy="23.0484" rx="2.39023" ry="2.39022"
-                                          fill-opacity="0.7" />
-                                       <ellipse cx="25.609" cy="23.0484" rx="2.39023" ry="2.39022" />
-                                    </svg>
-                                 </span>
-                              </button>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
+    <header class="z-index-2">
+      <div
+        style="background-color: white"
+        id="header-sticky"
+        class="tp-header-top-area tp-header__style-1"
+      >
+        <div class="container-1850">
+          <div class="row align-items-center g-0">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
+              <div class="tp-main__logo">
+                <a href="index.html">
+                  <img
+                    style="height: 61px"
+                    src="assets/img/logo/logo.png"
+                    alt
+                  />
+                </a>
+              </div>
             </div>
-         </div>
-      </div>
-   </header>
-
-
-   <div id="smooth-wrapper">
-      <div id="smooth-content">
-         <main>
-
-            <!-- hero slider start -->
-            <div class="tp-hero__area-3">
-               <div class="container-1850">
-                  <div class="tp-hero-3__wrapper">
-                     <div class="tp-hero__content tp-hero-3__content">
-                        <div class="title-wrap">
-                           <h1 class="title tp-chars">Smile Confidently with Nestro Dentistry.</h1>
-                           <p>We provide gentle, modern dentistry that puts your comfort first — whether you need a
-                              simple checkup.</p>
-                        </div>
-                        <div class="list-wrap">
-                           <ul>
-                              <li><img src="assets/img/icon/check-4.svg" alt=""> ISO 9001 Quality Certified.</li>
-                              <li><img src="assets/img/icon/check-4.svg" alt=""> Over 10,000 Smiles Restored.</li>
-                           </ul>
-                           <a href="contact.html" class="tp-btn__1 tp-btn-bg-2">Free Online Consultation
-                              <span class="icon">
-                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <mask id="mask0_50_214" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
-                                       y="0" width="14" height="14">
-                                       <rect width="14" height="14" fill="#D9D9D9" />
-                                    </mask>
-                                    <g mask="url(#mask0_50_214)">
-                                       <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M13.3676 1.63776L1.63768 13.3676L0.632266 12.3622L12.3621 0.632339L13.3676 1.63776Z"
-                                          fill="#1E1D2B" />
-                                       <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M11.8594 1.13503C9.49528 3.49911 9.64207 7.51072 11.8594 9.728L12.3621 10.2307L13.3675 9.22529L12.8648 8.72259C11.181 7.03885 11.0771 3.92808 12.8648 2.14045L13.3675 1.63774L12.3621 0.632325L11.8594 1.13503Z"
-                                          fill="#1E1D2B" />
-                                       <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M12.8648 2.14047C10.5008 4.50454 6.48916 4.35775 4.27188 2.14047L3.76917 1.63776L4.77458 0.632339L5.27729 1.13505C6.96036 2.81812 10.0718 2.92268 11.8594 1.13505L12.3621 0.632339L13.3676 1.63776L12.8648 2.14047Z"
-                                          fill="#1E1D2B" />
-                                    </g>
-                                 </svg>
-                              </span>
-                           </a>
-                        </div>
-                     </div>
-                     <div class="tp-hero-3__video">
-                        <video muted autoplay loop>
-                           <source src="assets/img/video/dental-checkup.mp4" type="video/mp4">
-                        </video>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="tp-space-top tp-space-bottom">
-                  <div class="container">
-                     <div class="tp-treatment__wrapper-2 fix">
-                        <div class="swiper tp-treatment__active">
-                           <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                 <div class="tp-hero__treatment-type">
-                                    <a href="orthodontics.html" class="tp-img-anim"><img src="assets/img/hero/general.png"
-                                          alt="Image"></a>
-                                    <p><a href="orthodontics.html">General Dentistry</a></p>
-                                 </div>
-                              </div>
-                              <div class="swiper-slide">
-                                 <div class="tp-hero__treatment-type">
-                                    <a href="cosmetic-dentistry.html" class="tp-img-anim"><img src="assets/img/hero/orthodontics.png"
-                                          alt="Image"></a>
-                                    <p><a href="cosmetic-dentistry.html">General Dentistry</a></p>
-                                 </div>
-                              </div>
-                              <div class="swiper-slide">
-                                 <div class="tp-hero__treatment-type">
-                                    <a href="children-dentistry.html" class="tp-img-anim"><img src="assets/img/hero/cosmetic.png"
-                                          alt="Image"></a>
-                                    <p><a href="children-dentistry.html">Cosmetic Dentistry</a></p>
-                                 </div>
-                              </div>
-                              <div class="swiper-slide">
-                                 <div class="tp-hero__treatment-type">
-                                    <a href="dental-implants.html" class="tp-img-anim"><img src="assets/img/hero/dental.png"
-                                          alt="Image"></a>
-                                    <p><a href="dental-implants.html">Dental Implants</a></p>
-                                 </div>
-                              </div>
-                              <div class="swiper-slide">
-                                 <div class="tp-hero__treatment-type">
-                                    <a href="orthodontics.html" class="tp-img-anim"><img src="assets/img/hero/orthodontics.png"
-                                          alt="Image"></a>
-                                    <p><a href="orthodontics.html">Orthodontics</a></p>
-                                 </div>
-                              </div>
-                              <div class="swiper-slide">
-                                 <div class="tp-hero__treatment-type">
-                                    <a href="pediatric-dentist.html" class="tp-img-anim"><img src="assets/img/hero/pediatric.png"
-                                          alt="Image"></a>
-                                    <p><a href="pediatric-dentist.html">Pediatric Dentist</a></p>
-                                 </div>
-                              </div>
-                              <div class="swiper-slide">
-                                 <div class="tp-hero__treatment-type">
-                                    <a href="children-dentistry.html" class="tp-img-anim"><img src="assets/img/hero/children.png"
-                                          alt="Image"></a>
-                                    <p><a href="children-dentistry.html">Children’s Dentistry</a></p>
-                                 </div>
-                              </div>
-                              <div class="swiper-slide">
-                                 <div class="tp-hero__treatment-type">
-                                    <a href="orthodontics.html" class="tp-img-anim"><img src="assets/img/hero/dental.png"
-                                          alt="Image"></a>
-                                    <p><a href="orthodontics.html">General Dentistry</a></p>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="tp-treatment__controls">
-                              <div class="swiper-pagination treat-pg"></div>
-                           </div>
-                        </div>
-                        <div class="tp-treatment__navigation">
-                           <button class="treat-prev">
-                              <i class="fa-solid fa-arrow-left"></i>
-                           </button>
-                           <button class="treat-next">
-                              <i class="fa-solid fa-arrow-right"></i>
-                           </button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- hero slider end -->
-
-            <!-- Funfact section start -->
-            <section class="tp-funfact__area tp-space-top">
-               <div class="container-1850">
-                  <div class="tp-funcfact__wrapper">
-                     <p>1,200+ Emergency Dental Cases Resolved</p>
-                     <div class="tp-funfact__items">
-                        <div class="tp-funfact-box">
-                           <h3 class="tp-funfact-number">
-                              <span class="purecounter" data-purecounter-start="0"
-                                 data-purecounter-end="12">12</span>k<span class="tp-funfact-suffix">+</span>
-                           </h3>
-                           <h6 class="tp-funfact-title">Emergency Cases <br> Resolved.</h6>
-                        </div>
-                        <div class="tp-funfact-box">
-                           <h3 class="tp-funfact-number">
-                              <span class="purecounter" data-purecounter-start="0"
-                                 data-purecounter-end="42">42k</span><span class="tp-funfact-suffix">+</span>
-                           </h3>
-                           <h6 class="tp-funfact-title">Clinics <br> Worldwide.</h6>
-                        </div>
-                        <div class="tp-funfact-box">
-                           <h3 class="tp-funfact-number">
-                              <span class="purecounter" data-purecounter-start="0"
-                                 data-purecounter-end="400">400k</span><span class="tp-funfact-suffix">+</span>
-                           </h3>
-                           <h6 class="tp-funfact-title">Dental Specialists <br> & Staff.</h6>
-                        </div>
-                        <div class="tp-funfact-box">
-                           <h3 class="tp-funfact-number">
-                              <span class="purecounter" data-purecounter-start="0"
-                                 data-purecounter-end="4">4</span>k<span class="tp-funfact-suffix">+</span>
-                           </h3>
-                           <h6 class="tp-funfact-title">5-Star Google <br> Reviews.</h6>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="tp-emergency__cards">
-                     <div class="tp-emergency__card card-1 tp-fade">
-                        <h3 class="title">Emergency Case</h3>
-                        <div class="para-wrap">
-                           <img src="assets/img/icon/teeth.svg" alt="Icon">
-                           <p>Dental pain or injury can’t wait. Whether it’s a sudden toothache, or an accident.</p>
-                        </div>
-                        <div class="contact-box">
-                           <div class="icon"><img src="assets/img/icon/phone.svg" alt="Phone Icon"></div>
-                           <div class="contact-wrap">
-                              <p>Emergency Support</p>
-                              <a href="tel:18005551234">+1 (800) 555-1234</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="tp-emergency__card card-2 tp-fade" data-delay="0.5">
-                        <h3 class="title">Nestro Location</h3>
-                        <div class="para-wrap">
-                           <img src="assets/img/icon/teeth-2.svg" alt="Icon">
-                           <p>SmileBright Dental – Los Angeles (Main Branch), 123 Main Street, Downtown, Los Angeles, CA
-                              90012, USA.</p>
-                        </div>
-                        <div class="contact-form">
-                           <span> Nestro Map Direction </span>
-
-                           <a href="#" class="tp-card-btn">
-                              <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                                 <mask id="mask0_50_215" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                                    width="14" height="14">
-                                    <rect width="14" height="14" fill="#D9D9D9" />
-                                 </mask>
-                                 <g mask="url(#mask0_50_215)">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                       d="M13.3676 1.63776L1.63768 13.3676L0.632266 12.3622L12.3621 0.632339L13.3676 1.63776Z" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                       d="M11.8594 1.13503C9.49528 3.49911 9.64207 7.51072 11.8594 9.728L12.3621 10.2307L13.3675 9.22529L12.8648 8.72259C11.181 7.03885 11.0771 3.92808 12.8648 2.14045L13.3675 1.63774L12.3621 0.632325L11.8594 1.13503Z" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                       d="M12.8648 2.14047C10.5008 4.50454 6.48916 4.35775 4.27188 2.14047L3.76917 1.63776L4.77458 0.632339L5.27729 1.13505C6.96036 2.81812 10.0718 2.92268 11.8594 1.13505L12.3621 0.632339L13.3676 1.63776L12.8648 2.14047Z" />
-                                 </g>
-                              </svg>
-                           </a>
-                        </div>
-                     </div>
-                     <div class="tp-emergency__card card-3 tp-fade" data-delay="0.75">
-                        <h3 class="title">Doctors Appointment</h3>
-                        <div class="para-wrap">
-                           <img src="assets/img/icon/calender.svg" alt="Icon">
-                           <p>Our online booking system makes it easy to reserve your spot in minutes.</p>
-                        </div>
-                        <div class="contact-box">
-                           <div class="icon"><img src="assets/img/icon/phone-2.svg" alt="Phone Icon"></div>
-                           <div class="contact-wrap contact-wrap-2">
-                              <p>Doctors Appointment</p>
-                              <a href="tel:18008885436">+1 (800) 888-5436</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!-- Funfact section end -->
-
-            <!-- About section start -->
-            <section class="tp-about__area tp-space-top">
-               <div class="container-1850">
-                  <div class="tp-about__content">
-                     <div class="top-wrap">
-                        <img src="assets/img/logo/logo-2.png" alt="Logo">
-                        <p>Nestro Always Quality Promise</p>
-                     </div>
-                     <h2 class="tp-section-title tp-chars">We understand that visiting the dentist can be an anxious
-                        experience for many people.</h2>
-                     <ul>
-                        <li><img src="assets/img/icon/check-2.svg" alt=""> ISO 9001 Quality Certified.</li>
-                        <li><img src="assets/img/icon/check-2.svg" alt=""> Hygiene & Safety First.</li>
-                        <li><img src="assets/img/icon/check-2.svg" alt=""> Certified & Award-Winning Dentists.</li>
-                     </ul>
-                     <div class="img-wrap">
-                        <img src="assets/img/about/about-1.jpg" alt="Image" data-lag="0" data-speed="auto">
-                     </div>
-                  </div>
-               </div>
-               <div class="container">
-                  <div class="row">
-                     <div class="col-lg-7">
-                        <div class="tp-about__content-2">
-                           <h3 class="title">Caring for Smiles.</h3>
-                           <p class="para">We believe a healthy smile is more than just teeth—it’s confidence, comfort,
-                              and quality of life. For over <span>12 years</span>, our experienced team of dentists,
-                              hygienists, and specialists have been providing gentle, personalized care using the latest
-                              dental technology.</p>
-                           <div class="inner-wrap">
-                              <div class="tp-funfact-box">
-                                 <h3 class="tp-funfact-number">
-                                    <span class="purecounter" data-purecounter-start="0"
-                                       data-purecounter-end="12">12</span><span class="tp-funfact-suffix">+</span>
-                                 </h3>
-                                 <h6 class="tp-funfact-title">Practical Area <br> Experience</h6>
-                              </div>
-
-                              <div class="tp-award-box">
-                                 <img src="assets/img/about/badge.png" alt="Badge">
-                                 <p>Best Dental Care <br> Award-2022</p>
-                              </div>
-                           </div>
-                           <div class="btn-wrapper">
-                              <a href="children-dentistry.html" class="tp-btn__1 tp-btn-bg-2">Explore Our Care
-                                 <span class="icon">
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                       xmlns="http://www.w3.org/2000/svg">
-                                       <mask id="mask0_50_220" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
-                                          y="0" width="14" height="14">
-                                          <rect width="14" height="14" fill="#D9D9D9" />
-                                       </mask>
-                                       <g mask="url(#mask0_50_220)">
-                                          <path fill-rule="evenodd" clip-rule="evenodd"
-                                             d="M13.3676 1.63776L1.63768 13.3676L0.632266 12.3622L12.3621 0.632339L13.3676 1.63776Z"
-                                             fill="#1E1D2B" />
-                                          <path fill-rule="evenodd" clip-rule="evenodd"
-                                             d="M11.8594 1.13503C9.49528 3.49911 9.64207 7.51072 11.8594 9.728L12.3621 10.2307L13.3675 9.22529L12.8648 8.72259C11.181 7.03885 11.0771 3.92808 12.8648 2.14045L13.3675 1.63774L12.3621 0.632325L11.8594 1.13503Z"
-                                             fill="#1E1D2B" />
-                                          <path fill-rule="evenodd" clip-rule="evenodd"
-                                             d="M12.8648 2.14047C10.5008 4.50454 6.48916 4.35775 4.27188 2.14047L3.76917 1.63776L4.77458 0.632339L5.27729 1.13505C6.96036 2.81812 10.0718 2.92268 11.8594 1.13505L12.3621 0.632339L13.3676 1.63776L12.8648 2.14047Z"
-                                             fill="#1E1D2B" />
-                                       </g>
-                                    </svg>
-                                 </span>
-                              </a>
-                              <a href="services.html" class="tp-btn__2">Explore All Services</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-5">
-                        <div class="tp-working__hour">
-                           <h3 class="title">Working Hours</h3>
-                           <div class="para-wrap">
-                              <img src="assets/img/icon/teeth-3.svg" alt="Icon">
-                              <p>Your dental health is important—let’s make it easy for you to keep it that way.</p>
-                           </div>
-                           <ul>
-                              <li>Monday-Thursday <span>8:30 - 19:30</span></li>
-                              <li>Friday <span>9:30 - 18:30</span></li>
-                              <li>Saturday <span>7:30 - 19:30</span></li>
-                              <li>Sunday <span>Closed</span></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!-- About section end -->
-
-            <!-- text slider area start -->
-            <div class="tp-text__slider-area fix tp-space-top tp-space-bottom">
-               <div class="swiper tp-text__slider-active">
-                  <div class="swiper-wrapper slide-transtion">
-                     <div class="swiper-slide">
-                        <h3 class="tp-text__text">
-                           Nestro Dental Care
-                           <img src="assets/img/logo/logo-3.png" alt="">
-                        </h3>
-                     </div>
-                     <div class="swiper-slide">
-                        <h3 class="tp-text__text">
-                           Nestro Dental Care
-                           <img src="assets/img/logo/logo-3.png" alt="">
-                        </h3>
-                     </div>
-                     <div class="swiper-slide">
-                        <h3 class="tp-text__text">
-                           Nestro Dental Care
-                           <img src="assets/img/logo/logo-3.png" alt="">
-                        </h3>
-                     </div>
-                     <div class="swiper-slide">
-                        <h3 class="tp-text__text">
-                           Nestro Dental Care
-                           <img src="assets/img/logo/logo-3.png" alt="">
-                        </h3>
-                     </div>
-                     <div class="swiper-slide">
-                        <h3 class="tp-text__text">
-                           Nestro Dental Care
-                           <img src="assets/img/logo/logo-3.png" alt="">
-                        </h3>
-                     </div>
-                     <div class="swiper-slide">
-                        <h3 class="tp-text__text">
-                           Nestro Dental Care
-                           <img src="assets/img/logo/logo-3.png" alt="">
-                        </h3>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- text slider area end -->
-
-            <!-- choose section start -->
-            <section class="tp-choose__area">
-               <div class="container-fluid p-0">
-                  <div class="row g-0">
-                     <div class="col-lg-6">
-                        <div class="tp-choose__image">
-                           <img src="assets/img/choose/choose-1.jpg" alt="Image" class="img">
-                           <img src="assets/img/choose/logo.png" alt="Logo" class="logo">
-                        </div>
-                     </div>
-                     <div class="col-lg-6">
-                        <div class="tp-choose__content">
-                           <h3 class="tp-section-subtitle">Why Choose Nestro Care</h3>
-                           <h3 class="tp-section-title tp-chars">We believe that every smile tells a story.</h3>
-                           <p class="para">We shine. With expert dentists, modern technology, and a gentle approach, we
-                              deliver care that’s as comfortable as it is effective. From routine check-ups to advanced
-                              treatments, we put your needs first, ensuring you feel confident every step of the way.
-                           </p>
-                           <h4 class="title">Deserves the best care possible.</h4>
-                           <ul>
-                              <li><img src="assets/img/icon/check-3.svg" alt="Icon"> Experienced Dental Professionals.
-                              </li>
-                              <li><img src="assets/img/icon/check-3.svg" alt="Icon"> Modern Technology.</li>
-                              <li><img src="assets/img/icon/check-3.svg" alt="Icon"> Comfort & Pain-Free Care.</li>
-                              <li><img src="assets/img/icon/check-3.svg" alt="Icon"> Emergency Support.</li>
-                              <li><img src="assets/img/icon/check-3.svg" alt="Icon"> Clean & Hygienic Environment.</li>
-                              <li><img src="assets/img/icon/check-3.svg" alt="Icon"> Skilled & Caring Dentists.</li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <img src="assets/img/choose/choose-2.png" alt="Image" class="shape">
-            </section>
-            <!-- choose section end -->
-
-            <!-- Appoinment section start -->
-            <section class="tp-appoinment__area">
-               <div class="container-1850">
-                  <div class="tp-appoinment__wrapper">
-                     <div class="tp-appoinment__content">
-                        <h2 class="tp-section-title tp-chars">Online Doctors Appointment</h2>
-                        <p class="para">Nestro’s online video consultations, you can connect directly with our
-                           experienced dentists—right from the comfort of your home.</p>
-                        <div class="btn-wrapper">
-                           <a href="contact.html" class="tp-btn__1 tp-btn-bg-2">Online Dental Advice – Free
-                              <span class="icon">
-                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <mask id="mask0_50_214" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
-                                       y="0" width="14" height="14">
-                                       <rect width="14" height="14" fill="#D9D9D9" />
-                                    </mask>
-                                    <g mask="url(#mask0_50_214)">
-                                       <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M13.3676 1.63776L1.63768 13.3676L0.632266 12.3622L12.3621 0.632339L13.3676 1.63776Z"
-                                          fill="#1E1D2B" />
-                                       <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M11.8594 1.13503C9.49528 3.49911 9.64207 7.51072 11.8594 9.728L12.3621 10.2307L13.3675 9.22529L12.8648 8.72259C11.181 7.03885 11.0771 3.92808 12.8648 2.14045L13.3675 1.63774L12.3621 0.632325L11.8594 1.13503Z"
-                                          fill="#1E1D2B" />
-                                       <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M12.8648 2.14047C10.5008 4.50454 6.48916 4.35775 4.27188 2.14047L3.76917 1.63776L4.77458 0.632339L5.27729 1.13505C6.96036 2.81812 10.0718 2.92268 11.8594 1.13505L12.3621 0.632339L13.3676 1.63776L12.8648 2.14047Z"
-                                          fill="#1E1D2B" />
-                                    </g>
-                                 </svg>
-                              </span>
-                           </a>
-                           <div class="contact-box">
-                              <div class="icon"><img src="assets/img/icon/phone.svg" alt="Phone Icon"></div>
-                              <div class="contact-wrap">
-                                 <p>Emergency Support</p>
-                                 <a href="tel:18005551234">+1 (800) 555-1234</a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="tp-appoinment__images">
-                        <div class="rate-wrap">
-                           <h2 class="rate">98%</h2>
-                           <p>Our Patient Care Retention Rate.</p>
-                        </div>
-                        <img src="assets/img/appointment/appoinment-1.png" alt="Image" class="appoinment-1">
-                        <img src="assets/img/appointment/appoinment-2.png" alt="Image" class="appoinment-2">
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!-- Appoinment section end -->
-
-            <!-- testimonial-area start -->
-            <section class="tp-testimonial__area tp-space-top tp-space-bottom">
-               <div class="container-1850">
-                  <div class="tp-testimonial__titlebox text-center">
-                     <h2 class="tp-section-title-2 tp-chars">Real stories, real smiles.</h2>
-                     <p>Nothing matters more than the trust and confidence of our patients. Here’s what they share about
-                        their experience with Nestro Dental:</p>
-                  </div>
-                  <div class="tp-testimonial__wrapper fix">
-                     <div class="swiper tp-testimonial-active">
-                        <div class="swiper-wrapper">
-                           <div class="swiper-slide">
-                              <div class="tp-testimonial__item">
-                                 <div class="left-content">
-                                    <h3 class="tp-testimonial__author">Thomas Wilson</h3>
-                                    <p class="tp-testimonial__verified-patient"><img
-                                          src="assets/img/icon/verified-badge.svg" alt=""> Verified Nestro Patient</p>
-                                    <p class="tp-testimonial__doctor"><span>Dental Implements</span> by <a href="#">Dr.
-                                          Emily Davis</a></p>
-                                 </div>
-                                 <div class="right-content" data-bg-color="#EAF3B2">
-                                    <div class="rating-wrapper">
-                                       <img src="assets/img/icon/rating.svg" alt="Ratings">
-                                       <span>(Excellent!)</span>
-                                    </div>
-                                    <p class="tp-testimonial__feedback">I used to be anxious about visiting the dentist,
-                                       but Nestro completely changed that. The team is gentle, caring, and explained
-                                       everything clearly.</p>
-                                    <div class="img-wrapper">
-                                       <div class="before-img">
-                                          <img src="assets/img/testimonial/before-1.png" alt="Before Image">
-                                          <p>Before</p>
-                                       </div>
-                                       <div class="after-img">
-                                          <img src="assets/img/testimonial/after-1.png" alt="After Image">
-                                          <p>After</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="tp-testimonial__item">
-                                 <div class="left-content">
-                                    <h3 class="tp-testimonial__author">Sarah Mitchell</h3>
-                                    <p class="tp-testimonial__verified-patient"><img
-                                          src="assets/img/icon/verified-badge.svg" alt=""> Verified Nestro Patient</p>
-                                    <p class="tp-testimonial__doctor"><span>Cosmetic Dentistry</span> by <a href="#">Dr.
-                                          Hannah Thompson</a></p>
-                                 </div>
-                                 <div class="right-content" data-bg-color="#C5E3FF">
-                                    <div class="rating-wrapper">
-                                       <img src="assets/img/icon/rating.svg" alt="Ratings">
-                                       <span>(Comfort!)</span>
-                                    </div>
-                                    <p class="tp-testimonial__feedback">The online video consultation was a
-                                       game-changer. I booked from home, got expert advice, and had my treatment plan
-                                       ready in minutes.</p>
-                                    <div class="img-wrapper">
-                                       <div class="before-img">
-                                          <img src="assets/img/testimonial/before-2.png" alt="Before Image">
-                                          <p>Before</p>
-                                       </div>
-                                       <div class="after-img">
-                                          <img src="assets/img/testimonial/after-2.png" alt="After Image">
-                                          <p>After</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="tp-testimonial__item">
-                                 <div class="left-content">
-                                    <h3 class="tp-testimonial__author">Thomas Wilson</h3>
-                                    <p class="tp-testimonial__verified-patient"><img
-                                          src="assets/img/icon/verified-badge.svg" alt=""> Verified Nestro Patient</p>
-                                    <p class="tp-testimonial__doctor"><span>Dental Implements</span> by <a href="#">Dr.
-                                          Emily Davis</a></p>
-                                 </div>
-                                 <div class="right-content" data-bg-color="#EAF3B2">
-                                    <div class="rating-wrapper">
-                                       <img src="assets/img/icon/rating.svg" alt="Ratings">
-                                       <span>(Excellent!)</span>
-                                    </div>
-                                    <p class="tp-testimonial__feedback">I used to be anxious about visiting the dentist,
-                                       but Nestro completely changed that. The team is gentle, caring, and explained
-                                       everything clearly.</p>
-                                    <div class="img-wrapper">
-                                       <div class="before-img">
-                                          <img src="assets/img/testimonial/before-1.png" alt="Before Image">
-                                          <p>Before</p>
-                                       </div>
-                                       <div class="after-img">
-                                          <img src="assets/img/testimonial/after-1.png" alt="After Image">
-                                          <p>After</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="tp-testimonial__item">
-                                 <div class="left-content">
-                                    <h3 class="tp-testimonial__author">Sarah Mitchell</h3>
-                                    <p class="tp-testimonial__verified-patient"><img
-                                          src="assets/img/icon/verified-badge.svg" alt=""> Verified Nestro Patient</p>
-                                    <p class="tp-testimonial__doctor"><span>Cosmetic Dentistry</span> by <a href="#">Dr.
-                                          Hannah Thompson</a></p>
-                                 </div>
-                                 <div class="right-content" data-bg-color="#C5E3FF">
-                                    <div class="rating-wrapper">
-                                       <img src="assets/img/icon/rating.svg" alt="Ratings">
-                                       <span>(Comfort!)</span>
-                                    </div>
-                                    <p class="tp-testimonial__feedback">The online video consultation was a
-                                       game-changer. I booked from home, got expert advice, and had my treatment plan
-                                       ready in minutes.</p>
-                                    <div class="img-wrapper">
-                                       <div class="before-img">
-                                          <img src="assets/img/testimonial/before-2.png" alt="Before Image">
-                                          <p>Before</p>
-                                       </div>
-                                       <div class="after-img">
-                                          <img src="assets/img/testimonial/after-2.png" alt="After Image">
-                                          <p>After</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="tp-testimonial__controls">
-                        <div class="tp-testimonial__navigation">
-                           <button class="prev testi-prev">
-                              <i class="fa-solid fa-arrow-left"></i>
-                           </button>
-                           <button class="next testi-next">
-                              <i class="fa-solid fa-arrow-right"></i>
-                           </button>
-                        </div>
-                        <div class="swiper-pagination tp-testi-pg"></div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!-- testimonial-area end -->
-
-            <!-- Doctor area start -->
-            <section class="tp-doctor__area tp-space-top tp-space-bottom">
-               <div class="container-1850">
-                  <div class="tp-doctor__titlebox">
-                     <h3 class="tp-section-subtitle mb-15">our specialists</h3>
-                     <h2 class="tp-section-title-2 tp-chars">Meet Our Dentist</h2>
-                  </div>
-                  <div class="tp-doctor__list">
-                     <div class="tp-doctor__card">
-                        <div class="tp-img-anim">
-                           <img src="assets/img/team/doctor-1.png" alt="Prof. Dr. Emily Davis">
-                        </div>
-                        <h3 class="name"><a href="alex-casta.html">Prof. Dr. Emily Davis</a></h3>
-                        <p> Orthodontist </p>
-                     </div>
-                     <div class="tp-doctor__card">
-                        <div class="tp-img-anim">
-                           <img src="assets/img/team/doctor-2.png" alt="Prof. Dr. Daniel Smith">
-                        </div>
-                        <h3 class="name"><a href="james-smithon.html">Prof. Dr. Daniel Smith</a></h3>
-                        <p>Oral Surgeon</p>
-                     </div>
-                     <div class="tp-doctor__card">
-                        <div class="tp-img-anim">
-                           <img src="assets/img/team/doctor-3.png" alt="Prof. Dr. Olivia Brown">
-                        </div>
-                        <h3 class="name"><a href="rolex-botano.html">Prof. Dr. Olivia Brown</a></h3>
-                        <p>Pediatric Dentist</p>
-                     </div>
-                     <div class="tp-doctor__card">
-                        <div class="tp-img-anim">
-                           <img src="assets/img/team/doctor-4.png" alt="Prof. Dr. Michael Johnson">
-                        </div>
-                        <h3 class="name"><a href="lexaus-robathom.html">Prof. Dr. Michael Johnson</a></h3>
-                        <p>Cosmetic Dentist</p>
-                     </div>
-                  </div>
-                  <div class="tp-doctor__content">
-                     <ul>
-                        <li><img src="assets/img/icon/check.svg" alt="Icon"> WHO hygiene standards followed.</li>
-                        <li><img src="assets/img/icon/check.svg" alt="Icon"> Emergency Dental Support.</li>
-                        <li><img src="assets/img/icon/check.svg" alt="Icon"> Multilingual Staff.</li>
-                     </ul>
-                     <p>Work With Leading Specialists. <a href="contact.html">Join as a Doctor
-                           <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                              <mask id="mask0_50_216" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                                 width="14" height="14">
-                                 <rect width="14" height="14" fill="#D9D9D9" />
-                              </mask>
-                              <g mask="url(#mask0_50_216)">
-                                 <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M13.3676 1.63776L1.63768 13.3676L0.632266 12.3622L12.3621 0.632339L13.3676 1.63776Z" />
-                                 <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M11.8594 1.13503C9.49528 3.49911 9.64207 7.51072 11.8594 9.728L12.3621 10.2307L13.3675 9.22529L12.8648 8.72259C11.181 7.03885 11.0771 3.92808 12.8648 2.14045L13.3675 1.63774L12.3621 0.632325L11.8594 1.13503Z" />
-                                 <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12.8648 2.14047C10.5008 4.50454 6.48916 4.35775 4.27188 2.14047L3.76917 1.63776L4.77458 0.632339L5.27729 1.13505C6.96036 2.81812 10.0718 2.92268 11.8594 1.13505L12.3621 0.632339L13.3676 1.63776L12.8648 2.14047Z" />
-                              </g>
-                           </svg>
-                        </a></p>
-                  </div>
-               </div>
-            </section>
-            <!-- Doctor area end -->
-
-            <!-- CTA area start -->
-            <section class="tp-cta__area">
-               <div class="container-1850">
-                  <div class="tp-cta__wrapper">
-                     <img src="assets/img/cta/cta-img.jpg" alt="Image" class="image" data-lag="0.1">
-                     <img src="assets/img/cta/logo.png" alt="logo" class="logo">
-                     <div class="tp-cta__box">
-                        <h2 class="title">We’re Listening to You!</h2>
-                        <p>Your feedback helps us create a better dental experience for everyone.</p>
-                        <a href="contact.html" class="tp-btn__1 tp-btn-bg-2">Advice & Complain Box
-                           <span class="icon">
-                              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <mask id="mask0_50_217" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                                    width="14" height="14">
-                                    <rect width="14" height="14" fill="#D9D9D9" />
-                                 </mask>
-                                 <g mask="url(#mask0_50_217)">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                       d="M13.3676 1.63776L1.63768 13.3676L0.632266 12.3622L12.3621 0.632339L13.3676 1.63776Z"
-                                       fill="#1E1D2B" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                       d="M11.8594 1.13503C9.49528 3.49911 9.64207 7.51072 11.8594 9.728L12.3621 10.2307L13.3675 9.22529L12.8648 8.72259C11.181 7.03885 11.0771 3.92808 12.8648 2.14045L13.3675 1.63774L12.3621 0.632325L11.8594 1.13503Z"
-                                       fill="#1E1D2B" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                       d="M12.8648 2.14047C10.5008 4.50454 6.48916 4.35775 4.27188 2.14047L3.76917 1.63776L4.77458 0.632339L5.27729 1.13505C6.96036 2.81812 10.0718 2.92268 11.8594 1.13505L12.3621 0.632339L13.3676 1.63776L12.8648 2.14047Z"
-                                       fill="#1E1D2B" />
-                                 </g>
-                              </svg>
-                           </span>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!-- CTA area end -->
-
-            <!-- Accordion area start -->
-            <section class="tp-accordion__area tp-space-top tp-space-bottom">
-               <div class="container">
-                  <div class="tp-accordion__wrapper">
-                     <div class="tp-accordion__titlebox">
-                        <h2 class="tp-section-title-2 tp-chars">Question & Answer</h2>
-                        <p>Nothing matters more than the trust and confidence of our patients. Here’s what they share
-                           about their experience with Nestro Dental:</p>
-                     </div>
-
-                     <div class="accordion tp-accordion" id="tpAccordion">
-                        <div class="accordion-item">
-                           <h2 class="accordion-header">
-                              <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                 data-bs-target="#tpCollapse1" aria-expanded="true" aria-controls="tpCollapse1">
-                                 How often should I visit the dentist?
-                              </button>
-                           </h2>
-                           <div id="tpCollapse1" class="accordion-collapse collapse show" data-bs-parent="#tpAccordion">
-                              <div class="accordion-body">
-                                 <p>Most patients benefit from a dental checkup every 6 months, as this allows your
-                                    dentist to catch early signs of cavities, gum issues, or other oral health problems
-                                    before they become serious.</p>
-
-                                 <ul class="working-hour">
-                                    <li>Monday-Thursday <span>8:30 - 19:30</span></li>
-                                    <li>Friday <span>9:30 - 18:30</span></li>
-                                    <li>Saturday <span>7:30 - 19:30</span></li>
-                                    <li>Sunday <span>8:30 - 21:30</span></li>
+            <div class="col-xl-6 col-lg-6 d-none d-xl-block">
+              <div class="tp-main__menu d-flex justify-content-center">
+                <nav>
+                  <ul>
+                    <!-- <li class="has-dropdown"><a href="index.html">
+                                    Home </a>
+                                 <ul class="tp-submenu">
+                                    <li>
+                                       <a href="index.html"> Home </a>
+                                    </li>
+                                    
                                  </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="accordion-item">
-                           <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                 data-bs-target="#tpCollapse2" aria-expanded="false" aria-controls="tpCollapse2">
-                                 How do I know if I need dental treatment?
-                              </button>
-                           </h2>
-                           <div id="tpCollapse2" class="accordion-collapse collapse" data-bs-parent="#tpAccordion">
-                              <div class="accordion-body">
-                                 <p>Most patients benefit from a dental checkup every 6 months, as this allows your
-                                    dentist to catch early signs of cavities, gum issues, or other oral health problems
-                                    before they become serious.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="accordion-item">
-                           <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                 data-bs-target="#tpCollapse3" aria-expanded="false" aria-controls="tpCollapse3">
-                                 How can I book an appointment?
-                              </button>
-                           </h2>
-                           <div id="tpCollapse3" class="accordion-collapse collapse" data-bs-parent="#tpAccordion">
-                              <div class="accordion-body">
-                                 <p>Most patients benefit from a dental checkup every 6 months, as this allows your
-                                    dentist to catch early signs of cavities, gum issues, or other oral health problems
-                                    before they become serious.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="accordion-item">
-                           <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                 data-bs-target="#tpCollapse4" aria-expanded="false" aria-controls="tpCollapse4">
-                                 What is the cost of a dental checkup?
-                              </button>
-                           </h2>
-                           <div id="tpCollapse4" class="accordion-collapse collapse" data-bs-parent="#tpAccordion">
-                              <div class="accordion-body">
-                                 <p>Most patients benefit from a dental checkup every 6 months, as this allows your
-                                    dentist to catch early signs of cavities, gum issues, or other oral health problems
-                                    before they become serious.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="accordion-item">
-                           <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                 data-bs-target="#tpCollapse5" aria-expanded="false" aria-controls="tpCollapse5">
-                                 Do you offer 24/7 emergency services?
-                              </button>
-                           </h2>
-                           <div id="tpCollapse5" class="accordion-collapse collapse" data-bs-parent="#tpAccordion">
-                              <div class="accordion-body">
-                                 <p>Most patients benefit from a dental checkup every 6 months, as this allows your
-                                    dentist to catch early signs of cavities, gum issues, or other oral health problems
-                                    before they become serious.</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!-- Accordion area end -->
-
-            <!-- Booking ares start -->
-            <div class="tp-booking__area">
-               <img src="assets/img/appointment/booking.jpg" alt="Image" class="booking-img">
-               <div class="container">
-                  <div class="tp-booking__form-wrapper">
-                     <div class="tp-booking__titlebox">
-                        <h2 class="tp-section-subtitle">Fill out the form below</h2>
-                        <h2 class="tp-section-title tp-chars">Book Doctor’s Appointment</h2>
-                     </div>
-
-                     <div class="tp-booking__form">
-                        <form action="#">
-                           <div class="tp-booking__inputs">
-                              <div class="input-wrap">
-                                 <select name="treatment" id="treatment">
-                                    <option value="">Select Treatment</option>
-                                    <option value="">General Dentistry</option>
-                                    <option value="">Cosmetic Dentistry</option>
-                                    <option value="">Dental Implants</option>
-                                 </select>
-                              </div>
-                              <div class="input-wrap">
-                                 <select name="specialists" id="specialists">
-                                    <option value="">Select Specialist</option>
-                                    <option value="">Orthodontist</option>
-                                    <option value="">Oral Surgeon</option>
-                                    <option value="">Pediatric Dentist</option>
-                                 </select>
-                              </div>
-                              <div class="input-wrap">
-                                 <input type="text" name="name" placeholder="Patient Name">
-                              </div>
-                              <div class="input-wrap">
-                                 <input type="text" name="phone" placeholder="Phone Number">
-                              </div>
-                              <div class="input-wrap">
-                                 <input type="text" name="datetime" placeholder="Preferred Date & Time">
-                              </div>
-                              <div class="input-wrap">
-                                 <select name="location" id="location">
-                                    <option value="">Clinic Location</option>
-                                    <option value="">London</option>
-                                    <option value="">Manchester</option>
-                                    <option value="">Liverpool</option>
-                                 </select>
-                              </div>
-                              <div class="input-submit">
-                                 <input type="submit" value="Confirm Appointment" class="submit">
-                              </div>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
+                              </li> -->
+                    <li>
+                      <a href="index.html"> Home </a>
+                    </li>
+                    <li><a href="about.html"> About Us </a></li>
+                    <li><a href="about.html"> Services Us </a></li>
+                    <!-- <li class="has-dropdown"><a href="services.html">
+                                    Our Services </a>
+                                 <ul class="tp-submenu">
+                                    <li>
+                                       <a href="orthodontics.html"> Orthodontics
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="pediatric-dentist.html">
+                                          Pediatric Dentist </a>
+                                    </li>
+                                    <li>
+                                       <a href="children-dentistry.html">
+                                          Children’s Dentistry </a>
+                                    </li>
+                                    <li>
+                                       <a href="dental-implants.html"> Dental
+                                          Implants </a>
+                                    </li>
+                                    <li>
+                                       <a href="cosmetic-dentistry.html">
+                                          Cosmetic Dentistry </a>
+                                    </li>
+                                 </ul>
+                              </li> -->
+                    <!-- <li class="has-dropdown"><a href="#"> Pages </a>
+                                 <ul class="tp-submenu">
+                                    <li>
+                                       <a href="blog.html"> Blog </a>
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a href="team.html"> Doctors </a>
+                                       <ul class="tp-submenu">
+                                          <li>
+                                             <a href="alex-casta.html"> Dr. Alex
+                                                Casta </a>
+                                          </li>
+                                          <li>
+                                             <a href="james-smithon.html"> Dr.
+                                                James Smithon </a>
+                                          </li>
+                                          <li>
+                                             <a href="rolex-botano.html"> Dr.
+                                                Rolex Botano </a>
+                                          </li>
+                                          <li>
+                                             <a href="lexaus-robathom.html"> Dr.
+                                                Lexaus Robathom </a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li> <a href="appointment.html"> Appointment
+                                       </a></li>
+                                    <li>
+                                       <a href="faq.html"> FAQS </a>
+                                    </li>
+                                    <li>
+                                       <a href="testimonials.html"> Testimonials
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </li> -->
+                    <li><a href="contact.html"> Contact Us </a></li>
+                  </ul>
+                </nav>
+              </div>
             </div>
-            <!-- Booking ares end -->
-
-            <!-- blog area start -->
-            <section class="tp-blog__area tp-space-top tp-space-bottom">
-               <div class="container-1850">
-                  <div class="tp-blog__titlebox">
-                     <h2 class="tp-section-title-2 tp-chars">News & Insight</h2>
-                     <p>Nothing matters more than the trust and confidence of our patients. Here’s what they share about
-                        their experience with Nestro Dental:</p>
-                  </div>
-                  <div class="tp-blog__grid">
-                     <article class="tp-blog__item tp-fade">
-                        <div class="thumb-wrap">
-                           <a href="#"><img src="assets/img/blog/blog-1.jpg" alt="Thumbnail"></a>
-                           <ul class="category">
-                              <li><a href="#">Dental Implement</a></li>
-                           </ul>
-                        </div>
-                        <ul class="meta">
-                           <li><a href="#">4 September, 2025</a></li>
-                        </ul>
-                        <h3 class="title"><a href="blog-details.html">Emergency Dental Care: What to Do in Urgent Situations.</a></h3>
-                     </article>
-                     <article class="tp-blog__item tp-fade" data-delay="0.4">
-                        <div class="thumb-wrap">
-                           <a href="#"><img src="assets/img/blog/blog-2.jpg" alt="Thumbnail"></a>
-                           <ul class="category">
-                              <li><a href="#">Orthodontist</a></li>
-                           </ul>
-                        </div>
-                        <ul class="meta">
-                           <li><a href="#">4 September, 2025</a></li>
-                        </ul>
-                        <h3 class="title"><a href="blog-details.html">Senior Dental Care: Keeping Smiles Healthy After 60.</a></h3>
-                     </article>
-                     <article class="tp-blog__item tp-fade" data-delay="0.7">
-                        <div class="thumb-wrap">
-                           <a href="#"><img src="assets/img/blog/blog-3.jpg" alt="Thumbnail"></a>
-                           <ul class="category">
-                              <li><a href="#">General Dentistry</a></li>
-                           </ul>
-                        </div>
-                        <ul class="meta">
-                           <li><a href="#">4 September, 2025</a></li>
-                        </ul>
-                        <h3 class="title"><a href="blog-details.html">Painless Dentistry: Modern Techniques Explained.</a></h3>
-                     </article>
-                  </div>
-               </div>
-            </section>
-            <!-- blog area end -->
-
-            <!-- Brand area start -->
-            <div class="tp-brand__area tp-space-bottom">
-               <div class="tp-brand__slider">
-                  <div class="swiper tp-brand__active">
-                     <div class="swiper-wrapper slide-transtion">
-                        <div class="swiper-slide">
-                           <div class="tp-brand__logo">
-                              <a href="#"><img src="assets/img/brand/logo-1.png" alt="Logo"></a>
-                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                           <div class="tp-brand__logo">
-                              <a href="#"><img src="assets/img/brand/logo-2.png" alt="Logo"></a>
-                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                           <div class="tp-brand__logo">
-                              <a href="#"><img src="assets/img/brand/logo-3.png" alt="Logo"></a>
-                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                           <div class="tp-brand__logo">
-                              <a href="#"><img src="assets/img/brand/logo-4.png" alt="Logo"></a>
-                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                           <div class="tp-brand__logo">
-                              <a href="#"><img src="assets/img/brand/logo-5.png" alt="Logo"></a>
-                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                           <div class="tp-brand__logo">
-                              <a href="#"><img src="assets/img/brand/logo-6.png" alt="Logo"></a>
-                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                           <div class="tp-brand__logo">
-                              <a href="#"><img src="assets/img/brand/logo-1.png" alt="Logo"></a>
-                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                           <div class="tp-brand__logo">
-                              <a href="#"><img src="assets/img/brand/logo-2.png" alt="Logo"></a>
-                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                           <div class="tp-brand__logo">
-                              <a href="#"><img src="assets/img/brand/logo-3.png" alt="Logo"></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+            <div
+              class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6 d-none d-xl-block"
+            >
+              <div class="tp-header__right d-flex justify-content-end">
+                <div class="tp-header__action">
+                  <ul>
+                    <li>
+                      <button class="tp-header__search-btn tp-search-open-btn">
+                        <span>
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.9007 17.5992L16.3065 15.0142C17.7129 13.2768 18.3989 11.066 18.2232 8.83766C18.0475 6.60934 17.0234 4.5334 15.3622 3.0379C13.7009 1.5424 11.5291 0.741378 9.29467 0.800002C7.0602 0.858626 4.93341 1.77243 3.35286 3.35298C1.77231 4.93353 0.858504 7.06032 0.79988 9.29479C0.741256 11.5293 1.54228 13.701 3.03778 15.3623C4.53328 17.0235 6.60922 18.0476 8.83754 18.2233C11.0659 18.399 13.2767 17.713 15.014 16.3067L17.599 18.9008C17.6843 18.9867 17.7856 19.0549 17.8973 19.1015C18.0091 19.148 18.1289 19.172 18.2499 19.172C18.3709 19.172 18.4907 19.148 18.6024 19.1015C18.7141 19.0549 18.8155 18.9867 18.9007 18.9008C18.9866 18.8156 19.0548 18.7142 19.1014 18.6025C19.1479 18.4908 19.1719 18.371 19.1719 18.25C19.1719 18.129 19.1479 18.0092 19.1014 17.8975C19.0548 17.7858 18.9866 17.6844 18.9007 17.5992ZM2.66655 9.54167C2.66655 8.18192 3.06976 6.85271 3.82519 5.72212C4.58063 4.59153 5.65436 3.71035 6.9106 3.19C8.16684 2.66964 9.54917 2.5335 10.8828 2.79877C12.2164 3.06404 13.4414 3.71882 14.4029 4.68031C15.3644 5.64179 16.0192 6.8668 16.2844 8.20042C16.5497 9.53404 16.4136 10.9164 15.8932 12.1726C15.3729 13.4289 14.4917 14.5026 13.3611 15.258C12.2305 16.0135 10.9013 16.4167 9.54155 16.4167C7.71818 16.4167 5.9695 15.6923 4.68019 14.403C3.39087 13.1137 2.66655 11.365 2.66655 9.54167Z"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </li>
+                    <li>
+                      <a href="contact.html" class="tp-btn__1 tp-btn-bg-1"
+                        >Schedule a Checkup
+                        <span class="icon">
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask
+                              id="mask0_50_218"
+                              style="mask-type: alpha"
+                              maskUnits="userSpaceOnUse"
+                              x="0"
+                              y="0"
+                              width="14"
+                              height="14"
+                            >
+                              <rect width="14" height="14" fill="#D9D9D9" />
+                            </mask>
+                            <g mask="url(#mask0_50_218)">
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M13.3676 1.63776L1.63768 13.3676L0.632266 12.3622L12.3621 0.632339L13.3676 1.63776Z"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M11.8594 1.13503C9.49528 3.49911 9.64207 7.51072 11.8594 9.728L12.3621 10.2307L13.3675 9.22529L12.8648 8.72259C11.181 7.03885 11.0771 3.92808 12.8648 2.14045L13.3675 1.63774L12.3621 0.632325L11.8594 1.13503Z"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M12.8648 2.14047C10.5008 4.50454 6.48916 4.35775 4.27188 2.14047L3.76917 1.63776L4.77458 0.632339L5.27729 1.13505C6.96036 2.81812 10.0718 2.92268 11.8594 1.13505L12.3621 0.632339L13.3676 1.63776L12.8648 2.14047Z"
+                              />
+                            </g>
+                          </svg>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <!-- Brand area end -->
-
-         </main>
-
-         <footer>
-            <section class="tp-footer__area black-bg tp-space-top">
-               <div class="container-1850">
-                  <div class="row g-0">
-                     <div class="col-xl-6 col-lg-4 col-md-12">
-                        <div class="tp-footer__widget">
-                           <div class="tp-footer__adress-box">
-                              <img src="assets/img/logo/logo-light.png" alt="Logo">
-                              <div class="address">
-                                 <a href="#">SmileBright Dental – Los Angeles <br> (Main Branch), 123 Main Street,
-                                    Downtown, Los <br> Angeles, CA 90012, USA.</a>
-                              </div>
-                              <div class="tp-copyright__social">
-                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                 <a href="#"><i class="fab fa-youtube"></i></a>
-                                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="tp-footer__widget">
-                           <h3 class="tp-footer__widget-title">Quick Links</h3>
-                           <div class="tp-footer__list">
-                              <a href="#">Company</a>
-                              <a href="#">Find Doctors</a>
-                              <a href="#">Patient Reviews</a>
-                              <a href="#">News & Insights</a>
-                              <a href="#">Contact</a>
-                           </div>
-                        </div>
-                        <div class="tp-footer__contact-box">
-                           <div class="icon"><img src="assets/img/icon/phone.svg" alt="Phone Icon"></div>
-                           <div class="contact-wrap">
-                              <p>Emergency Support</p>
-                              <a href="tel:18005551234">+1 (800) 555-1234</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="tp-footer__widget right-align">
-                           <h3 class="tp-footer__widget-title">Services</h3>
-                           <div class="tp-footer__list">
-                              <a href="#">General Dentistry</a>
-                              <a href="#">Orthodontist</a>
-                              <a href="#">Cosmetic Dentistry</a>
-                              <a href="#">Dental Implement</a>
-                              <a href="#">Child’s Dentistry</a>
-                           </div>
-                        </div>
-                        <div class="tp-footer__contact-box right-align">
-                           <div class="icon"><img src="assets/img/icon/phone-2.svg" alt="Phone Icon"></div>
-                           <div class="contact-wrap">
-                              <p>Doctors Appointment</p>
-                              <a href="tel:18008885436">+1 (800) 888-5436</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="tp-footer__text p-relative"> Nestro Clinic </div>
-               <div class="tp-copyright__style">
-                  <div class="container-1850">
-                     <div class="tp-copyright__wrap">
-                        <div class="row align-items-center">
-                           <div class="col-xl-6 col-lg-6 col-md-12">
-                              <div class="tp-copyright__text">
-                                 <p>© 2025 <span>Oclata</span>. All Rights Reserved.</p>
-                              </div>
-                           </div>
-                           <div class="col-xl-6 col-lg-6 col-md-12">
-                              <div class="tp-footer__menu">
-                                 <a href="#">Legal Notice</a>
-                                 <a href="#">Terms & Conditions</a>
-                                 <a href="#">Privacy Policy</a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-         </footer>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6 d-xl-none d-lg-block">
+              <div class="tp-header__right d-flex justify-content-end">
+                <div class="tp-header__action">
+                  <ul>
+                    <li>
+                      <button class="tp-header__burs-btn tp-offcanvas-open-btn">
+                        <span>
+                          <svg
+                            width="28"
+                            height="26"
+                            viewBox="0 0 28 26"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <ellipse
+                              cx="2.39023"
+                              cy="2.39022"
+                              rx="2.39023"
+                              ry="2.39022"
+                            />
+                            <ellipse
+                              cx="13.9137"
+                              cy="2.39022"
+                              rx="2.39023"
+                              ry="2.39022"
+                              fill-opacity="0.7"
+                            />
+                            <ellipse
+                              cx="25.441"
+                              cy="2.39022"
+                              rx="2.39023"
+                              ry="2.39022"
+                              fill-opacity="0.7"
+                            />
+                            <ellipse
+                              cx="2.39023"
+                              cy="12.6339"
+                              rx="2.39023"
+                              ry="2.39022"
+                              fill-opacity="0.7"
+                            />
+                            <ellipse
+                              cx="13.9137"
+                              cy="12.6349"
+                              rx="2.39023"
+                              ry="2.39022"
+                            />
+                            <ellipse
+                              cx="25.441"
+                              cy="12.6349"
+                              rx="2.39023"
+                              ry="2.39022"
+                              fill-opacity="0.7"
+                            />
+                            <ellipse
+                              cx="2.39023"
+                              cy="23.0484"
+                              rx="2.39023"
+                              ry="2.39022"
+                              fill-opacity="0.7"
+                            />
+                            <ellipse
+                              cx="13.9996"
+                              cy="23.0484"
+                              rx="2.39023"
+                              ry="2.39022"
+                              fill-opacity="0.7"
+                            />
+                            <ellipse
+                              cx="25.609"
+                              cy="23.0484"
+                              rx="2.39023"
+                              ry="2.39022"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-   </div>
+    </header>
 
-   <!-- JS here -->
-   <script src="assets/js/jquery.js"></script>
-   <script src="assets/js/bootstrap-bundle-min.js"></script>
-   <script src="assets/js/gsap.js"></script>
-   <script src="assets/js/gsap-scroll-smoother.js"></script>
-   <script src="assets/js/gsap-scroll-trigger.js"></script>
-   <script src="assets/js/gsap-scroll-to-plugin.js"></script>
-   <script src="assets/js/gsap-split-text.js"></script>
-   <script src="assets/js/chroma-min.js"></script>
-   <script src="assets/js/swiper-bundle.js"></script>
-   <script src="assets/js/magnific-popup.js"></script>
-   <script src="assets/js/purecounter.js"></script>
-   <script src="assets/js/jquery-knob.js"></script>
-   <script src="assets/js/jquery-appear.js"></script>
-   <script src="assets/js/beforeafter-min.js"></script>
-   <script src='assets/js/scroll-magic.js'></script>
-   <script src="assets/js/countdown.js"></script>
-   <script src="assets/js/wow.js"></script>
-   <script src="assets/js/animated-headline.js"></script>
-   <script src="assets/js/nice-select.js"></script>
-   <script src="assets/js/main.js"></script>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <!-- hero slider start -->
+          <div class="tp-hero__area-3">
+            <div class="container-1850">
+              <div class="tp-hero-3__wrapper">
+                <div class="tp-hero__content tp-hero-3__content">
+                  <div class="title-wrap">
+                    <h1 class="title tp-chars">
+                      Smile Confidently with Nestro Dentistry.
+                    </h1>
+                    <p>
+                      We provide gentle, modern dentistry that puts your comfort
+                      first — whether you need a simple checkup.
+                    </p>
+                  </div>
+                  <div class="list-wrap">
+                    <ul>
+                      <li>
+                        <img src="assets/img/icon/check-4.svg" alt /> ISO 9001
+                        Quality Certified.
+                      </li>
+                      <li>
+                        <img src="assets/img/icon/check-4.svg" alt /> Over
+                        10,000 Smiles Restored.
+                      </li>
+                    </ul>
+                    <a href="contact.html" class="tp-btn__1 tp-btn-bg-2"
+                      >Free Online Consultation
+                      <span class="icon">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <mask
+                            id="mask0_50_214"
+                            style="mask-type: alpha"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="14"
+                            height="14"
+                          >
+                            <rect width="14" height="14" fill="#D9D9D9" />
+                          </mask>
+                          <g mask="url(#mask0_50_214)">
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M13.3676 1.63776L1.63768 13.3676L0.632266 12.3622L12.3621 0.632339L13.3676 1.63776Z"
+                              fill="#1E1D2B"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M11.8594 1.13503C9.49528 3.49911 9.64207 7.51072 11.8594 9.728L12.3621 10.2307L13.3675 9.22529L12.8648 8.72259C11.181 7.03885 11.0771 3.92808 12.8648 2.14045L13.3675 1.63774L12.3621 0.632325L11.8594 1.13503Z"
+                              fill="#1E1D2B"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M12.8648 2.14047C10.5008 4.50454 6.48916 4.35775 4.27188 2.14047L3.76917 1.63776L4.77458 0.632339L5.27729 1.13505C6.96036 2.81812 10.0718 2.92268 11.8594 1.13505L12.3621 0.632339L13.3676 1.63776L12.8648 2.14047Z"
+                              fill="#1E1D2B"
+                            />
+                          </g>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="tp-hero-3__video">
+                  <video muted autoplay loop>
+                    <source
+                      src="assets/img/video/dental-checkup.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div class="tp-space-top tp-space-bottom">
+              <div class="container">
+                <div class="tp-treatment__wrapper-2 fix">
+                  <div class="swiper tp-treatment__active">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="tp-hero__treatment-type">
+                          <a href="orthodontics.html" class="tp-img-anim"
+                            ><img src="assets/img/hero/general.png" alt="Image"
+                          /></a>
+                          <p>
+                            <a href="orthodontics.html">General Dentistry</a>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="tp-hero__treatment-type">
+                          <a href="cosmetic-dentistry.html" class="tp-img-anim"
+                            ><img
+                              src="assets/img/hero/orthodontics.png"
+                              alt="Image"
+                          /></a>
+                          <p>
+                            <a href="cosmetic-dentistry.html"
+                              >General Dentistry</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="tp-hero__treatment-type">
+                          <a href="children-dentistry.html" class="tp-img-anim"
+                            ><img
+                              src="assets/img/hero/cosmetic.png"
+                              alt="Image"
+                          /></a>
+                          <p>
+                            <a href="children-dentistry.html"
+                              >Cosmetic Dentistry</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="tp-hero__treatment-type">
+                          <a href="dental-implants.html" class="tp-img-anim"
+                            ><img src="assets/img/hero/dental.png" alt="Image"
+                          /></a>
+                          <p>
+                            <a href="dental-implants.html">Dental Implants</a>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="tp-hero__treatment-type">
+                          <a href="orthodontics.html" class="tp-img-anim"
+                            ><img
+                              src="assets/img/hero/orthodontics.png"
+                              alt="Image"
+                          /></a>
+                          <p><a href="orthodontics.html">Orthodontics</a></p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="tp-hero__treatment-type">
+                          <a href="pediatric-dentist.html" class="tp-img-anim"
+                            ><img
+                              src="assets/img/hero/pediatric.png"
+                              alt="Image"
+                          /></a>
+                          <p>
+                            <a href="pediatric-dentist.html"
+                              >Pediatric Dentist</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="tp-hero__treatment-type">
+                          <a href="children-dentistry.html" class="tp-img-anim"
+                            ><img
+                              src="assets/img/hero/children.png"
+                              alt="Image"
+                          /></a>
+                          <p>
+                            <a href="children-dentistry.html"
+                              >Children’s Dentistry</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="tp-hero__treatment-type">
+                          <a href="orthodontics.html" class="tp-img-anim"
+                            ><img src="assets/img/hero/dental.png" alt="Image"
+                          /></a>
+                          <p>
+                            <a href="orthodontics.html">General Dentistry</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tp-treatment__controls">
+                      <div class="swiper-pagination treat-pg"></div>
+                    </div>
+                  </div>
+                  <div class="tp-treatment__navigation">
+                    <button class="treat-prev">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="treat-next">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- hero slider end -->
+
+          <!-- Funfact section start -->
+          <section class="tp-funfact__area tp-space-top">
+            <div class="container-1850">
+              <div class="tp-funcfact__wrapper">
+                <p>1,200+ Emergency Dental Cases Resolved</p>
+                <div class="tp-funfact__items">
+                  <div class="tp-funfact-box">
+                    <h3 class="tp-funfact-number">
+                      <span
+                        class="purecounter"
+                        data-purecounter-start="0"
+                        data-purecounter-end="12"
+                        >12</span
+                      >k<span class="tp-funfact-suffix">+</span>
+                    </h3>
+                    <h6 class="tp-funfact-title">
+                      Emergency Cases <br />
+                      Resolved.
+                    </h6>
+                  </div>
+                  <!-- <div class="tp-funfact-box">
+                              <h3 class="tp-funfact-number">
+                                 <span class="purecounter"
+                                    data-purecounter-start="0"
+                                    data-purecounter-end="42">42k</span><span
+                                    class="tp-funfact-suffix">+</span>
+                              </h3>
+                              <h6 class="tp-funfact-title">Clinics <br>
+                                 Worldwide.</h6>
+                           </div> -->
+                  <div class="tp-funfact-box">
+                    <h3 class="tp-funfact-number">
+                      <span
+                        class="purecounter"
+                        data-purecounter-start="0"
+                        data-purecounter-end="400"
+                        >400k</span
+                      ><span class="tp-funfact-suffix">+</span>
+                    </h3>
+                    <h6 class="tp-funfact-title">
+                      Dental Specialists <br />
+                      & Staff.
+                    </h6>
+                  </div>
+                  <div class="tp-funfact-box">
+                    <h3 class="tp-funfact-number">
+                      <span
+                        class="purecounter"
+                        data-purecounter-start="0"
+                        data-purecounter-end="1"
+                        >1</span
+                      >k<span class="tp-funfact-suffix">+</span>
+                    </h3>
+                    <h6 class="tp-funfact-title">
+                      5-Star Google <br />
+                      Reviews.
+                    </h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tp-emergency__cards">
+                <div class="tp-emergency__card card-1 tp-fade">
+                  <h3 class="title">Emergency Case</h3>
+                  <div class="para-wrap">
+                    <img src="assets/img/icon/teeth.svg" alt="Icon" />
+                    <p>
+                      Dental pain or injury can’t wait. Whether it’s a sudden
+                      toothache, or an accident.
+                    </p>
+                  </div>
+                  <div class="contact-box">
+                    <div class="icon">
+                      <img src="assets/img/icon/phone.svg" alt="Phone Icon" />
+                    </div>
+                    <div class="contact-wrap">
+                      <p>Emergency Support</p>
+                      <a href="tel:08592000067">085920 00067</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tp-emergency__card card-2 tp-fade" data-delay="0.5">
+                  <h3 class="title">Nestro Location</h3>
+                  <div class="para-wrap">
+                    <img src="assets/img/icon/teeth-2.svg" alt="Icon" />
+                    <p>
+                      NEOM Dental Care, Hiba tower, Calicut Rd, behind SBI,
+                      Valanchery, Kavumpuram, Kerala 676552.
+                    </p>
+                  </div>
+                  <div class="contact-form">
+                    <span> Nestro Map Direction </span>
+
+                    <a href="contact.html" class="tp-card-btn">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <mask
+                          id="mask0_50_215"
+                          style="mask-type: alpha"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="14"
+                          height="14"
+                        >
+                          <rect width="14" height="14" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_50_215)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M13.3676 1.63776L1.63768 13.3676L0.632266 12.3622L12.3621 0.632339L13.3676 1.63776Z"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M11.8594 1.13503C9.49528 3.49911 9.64207 7.51072 11.8594 9.728L12.3621 10.2307L13.3675 9.22529L12.8648 8.72259C11.181 7.03885 11.0771 3.92808 12.8648 2.14045L13.3675 1.63774L12.3621 0.632325L11.8594 1.13503Z"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M12.8648 2.14047C10.5008 4.50454 6.48916 4.35775 4.27188 2.14047L3.76917 1.63776L4.77458 0.632339L5.27729 1.13505C6.96036 2.81812 10.0718 2.92268 11.8594 1.13505L12.3621 0.632339L13.3676 1.63776L12.8648 2.14047Z"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="tp-emergency__card card-3 tp-fade"
+                  data-delay="0.75"
+                >
+                  <h3 class="title">Doctors Appointment</h3>
+                  <div class="para-wrap">
+                    <img src="assets/img/icon/calender.svg" alt="Icon" />
+                    <p>
+                      Our online booking system makes it easy to reserve your
+                      spot in minutes.
+                    </p>
+                  </div>
+                  <div class="contact-box">
+                    <div class="icon">
+                      <img src="assets/img/icon/phone-2.svg" alt="Phone Icon" />
+                    </div>
+                    <div class="contact-wrap contact-wrap-2">
+                      <p>Doctors Appointment</p>
+                      <a href="tel:08592000067">085920 00067</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Funfact section end -->
+
+          <!-- About section start -->
+          <section class="tp-about__area tp-space-top">
+            <div class="container-1850">
+              <div class="tp-about__content">
+                <!-- <div class="top-wrap">
+                           <img src="assets/img/logo/logo-2.png" alt="Logo">
+                           <p>Nestro Always Quality Promise</p>
+                        </div> -->
+                <h2 class="tp-section-title tp-chars">
+                  We understand that visiting the dentist can be an anxious
+                  experience for many people.
+                </h2>
+                <ul>
+                  <li>
+                    <img src="assets/img/icon/check-2.svg" alt /> ISO 9001
+                    Quality Certified.
+                  </li>
+                  <li>
+                    <img src="assets/img/icon/check-2.svg" alt /> Hygiene &
+                    Safety First.
+                  </li>
+                  <li>
+                    <img src="assets/img/icon/check-2.svg" alt /> Certified &
+                    Award-Winning Dentists.
+                  </li>
+                </ul>
+                <div class="img-wrap">
+                  <img
+                    src="assets/img/about/about-1.jpg"
+                    alt="Image"
+                    data-lag="0"
+                    data-speed="auto"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="tp-about__content-2">
+                    <h3 class="title">Caring for Smiles.</h3>
+                    <p class="para">
+                      Established in 2014, NEOM DENTAL CARE has proudly served
+                      the community for over 10 years with a strong commitment
+                      to delivering exceptional dental care. What began as a
+                      small practice has grown into a trusted name in dentistry,
+                      known for quality, compassion, and patient-first service.
+                    </p>
+                    <div class="inner-wrap">
+                      <div class="tp-funfact-box">
+                        <h3 class="tp-funfact-number">
+                          <span
+                            class="purecounter"
+                            data-purecounter-start="0"
+                            data-purecounter-end="12"
+                            >12</span
+                          ><span class="tp-funfact-suffix">+</span>
+                        </h3>
+                        <h6 class="tp-funfact-title">
+                          Practical Area <br />
+                          Experience
+                        </h6>
+                      </div>
+
+                      <div class="tp-award-box">
+                        <img src="assets/img/about/badge.png" alt="Badge" />
+                        <p>
+                          Best Dental Care <br />
+                          Award-2022
+                        </p>
+                      </div>
+                    </div>
+                    <div class="btn-wrapper">
+                      <a href="contact.html" class="tp-btn__1 tp-btn-bg-2"
+                        >Book Now
+
+                        <span class="icon">
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask
+                              id="mask0_50_220"
+                              style="mask-type: alpha"
+                              maskUnits="userSpaceOnUse"
+                              x="0"
+                              y="0"
+                              width="14"
+                              height="14"
+                            >
+                              <rect width="14" height="14" fill="#D9D9D9" />
+                            </mask>
+                            <g mask="url(#mask0_50_220)">
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M13.3676 1.63776L1.63768 13.3676L0.632266 12.3622L12.3621 0.632339L13.3676 1.63776Z"
+                                fill="#1E1D2B"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M11.8594 1.13503C9.49528 3.49911 9.64207 7.51072 11.8594 9.728L12.3621 10.2307L13.3675 9.22529L12.8648 8.72259C11.181 7.03885 11.0771 3.92808 12.8648 2.14045L13.3675 1.63774L12.3621 0.632325L11.8594 1.13503Z"
+                                fill="#1E1D2B"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M12.8648 2.14047C10.5008 4.50454 6.48916 4.35775 4.27188 2.14047L3.76917 1.63776L4.77458 0.632339L5.27729 1.13505C6.96036 2.81812 10.0718 2.92268 11.8594 1.13505L12.3621 0.632339L13.3676 1.63776L12.8648 2.14047Z"
+                                fill="#1E1D2B"
+                              />
+                            </g>
+                          </svg>
+                        </span>
+                      </a>
+                      <a href="about.html" class="tp-btn__2">About us</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="tp-working__hour">
+                    <h3 class="title">Working Hours</h3>
+                    <div class="para-wrap">
+                      <img src="assets/img/icon/teeth-3.svg" alt="Icon" />
+                      <p>
+                        Your dental health is important—let’s make it easy for
+                        you to keep it that way.
+                      </p>
+                    </div>
+                    <ul>
+                      <li>Monday-Saturday <span>9:00 AM - 7:30 PM</span></li>
+
+                      <li>Sunday <span>Closed</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- About section end -->
+
+          <!-- text slider area start -->
+          <div class="tp-text__slider-area fix tp-space-top tp-space-bottom">
+            <div class="swiper tp-text__slider-active">
+              <div class="swiper-wrapper slide-transtion">
+                <div class="swiper-slide">
+                  <h3 class="tp-text__text">
+                    NEOM Dental Care
+                    <!-- <img src="assets/img/logo/logo-3.png" alt> -->
+                  </h3>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="tp-text__text">
+                    NEOM Dental Care
+                    <!-- <img src="assets/img/logo/logo-3.png" alt> -->
+                  </h3>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="tp-text__text">
+                    NEOM Dental Care
+                    <!-- <img src="assets/img/logo/logo-3.png" alt> -->
+                  </h3>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="tp-text__text">
+                    NEOM Dental Care
+                    <!-- <img src="assets/img/logo/logo-3.png" alt> -->
+                  </h3>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="tp-text__text">
+                    NEOM Dental Care
+                    <!-- <img src="assets/img/logo/logo-3.png" alt> -->
+                  </h3>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="tp-text__text">
+                    NEOM Dental Care
+                    <!-- <img src="assets/img/logo/logo-3.png" alt> -->
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- text slider area end -->
+
+          <!-- choose section start -->
+          <section class="tp-choose__area">
+            <div class="container-fluid p-0">
+              <div class="row g-0">
+                <div class="col-lg-6">
+                  <div class="tp-choose__image">
+                    <img
+                      src="assets/img/choose/choose-1.jpg"
+                      alt="Image"
+                      class="img"
+                    />
+                    <img
+                      src="assets/img/choose/logo.png"
+                      alt="Logo"
+                      class="logo"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="tp-choose__content">
+                    <h3 class="tp-section-subtitle">Why Choose Nestro Care</h3>
+                    <h3 class="tp-section-title tp-chars">
+                      We believe that every smile tells a story.
+                    </h3>
+                    <p class="para">
+                      We shine. With expert dentists, modern technology, and a
+                      gentle approach, we deliver care that’s as comfortable as
+                      it is effective. From routine check-ups to advanced
+                      treatments, we put your needs first, ensuring you feel
+                      confident every step of the way.
+                    </p>
+                    <h4 class="title">Deserves the best care possible.</h4>
+                    <ul>
+                      <li>
+                        <img src="assets/img/icon/check-3.svg" alt="Icon" />
+                        Experienced Dental Professionals.
+                      </li>
+                      <li>
+                        <img src="assets/img/icon/check-3.svg" alt="Icon" />
+                        Modern Technology.
+                      </li>
+                      <li>
+                        <img src="assets/img/icon/check-3.svg" alt="Icon" />
+                        Comfort & Pain-Free Care.
+                      </li>
+                      <li>
+                        <img src="assets/img/icon/check-3.svg" alt="Icon" />
+                        Emergency Support.
+                      </li>
+                      <li>
+                        <img src="assets/img/icon/check-3.svg" alt="Icon" />
+                        Clean & Hygienic Environment.
+                      </li>
+                      <li>
+                        <img src="assets/img/icon/check-3.svg" alt="Icon" />
+                        Skilled & Caring Dentists.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 
+                  <img src="assets/img/choose/choose-2.png" alt="Image"
+                     class="shape"> -->
+          </section>
+          <!-- choose section end -->
+
+          <!-- Appoinment section start -->
+          <section class="tp-appoinment__area">
+            <div class="container-1850">
+              <div class="tp-appoinment__wrapper">
+                <div class="tp-appoinment__content">
+                  <h2 class="tp-section-title tp-chars">
+                    Online Doctors Appointment
+                  </h2>
+                  <p class="para">
+                    Neom online video consultations, you can connect directly
+                    with our experienced dentists—right from the comfort of your
+                    home.
+                  </p>
+                  <br />
+                  <br />
+                  <div class="btn-wrapper">
+                    <a href="contact.html" class="tp-btn__1 tp-btn-bg-2">
+                      Dental Advice
+                      <span class="icon">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <mask
+                            id="mask0_50_214"
+                            style="mask-type: alpha"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="14"
+                            height="14"
+                          >
+                            <rect width="14" height="14" fill="#D9D9D9" />
+                          </mask>
+                          <g mask="url(#mask0_50_214)">
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M13.3676 1.63776L1.63768 13.3676L0.632266 12.3622L12.3621 0.632339L13.3676 1.63776Z"
+                              fill="#1E1D2B"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M11.8594 1.13503C9.49528 3.49911 9.64207 7.51072 11.8594 9.728L12.3621 10.2307L13.3675 9.22529L12.8648 8.72259C11.181 7.03885 11.0771 3.92808 12.8648 2.14045L13.3675 1.63774L12.3621 0.632325L11.8594 1.13503Z"
+                              fill="#1E1D2B"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M12.8648 2.14047C10.5008 4.50454 6.48916 4.35775 4.27188 2.14047L3.76917 1.63776L4.77458 0.632339L5.27729 1.13505C6.96036 2.81812 10.0718 2.92268 11.8594 1.13505L12.3621 0.632339L13.3676 1.63776L12.8648 2.14047Z"
+                              fill="#1E1D2B"
+                            />
+                          </g>
+                        </svg>
+                      </span>
+                    </a>
+                    <div class="contact-box">
+                      <div class="icon">
+                        <img src="assets/img/icon/phone.svg" alt="Phone Icon" />
+                      </div>
+                      <div class="contact-wrap">
+                        <p>Emergency Support</p>
+                        <a href="tel:08592000067">085920 00067</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tp-appoinment__images">
+                  <div class="rate-wrap">
+                    <h2 class="rate">98%</h2>
+                    <p>Our Patient Care Retention Rate.</p>
+                  </div>
+                  <br />
+                  <br />
+                  <img
+                    src="assets/img/appointment/appoinment-1.png"
+                    alt="Image"
+                    class="appoinment-1"
+                  />
+                  <img
+                    src="assets/img/appointment/appoinment-2.png"
+                    alt="Image"
+                    class="appoinment-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Appoinment section end -->
+
+          <!-- testimonial-area start -->
+     <!-- testimonial-area start -->
+<section class="tp-testimonial__area tp-space-top tp-space-bottom">
+  <div class="container-1850">
+    <div class="tp-testimonial__titlebox text-center">
+      <h2 class="tp-section-title-2 tp-chars">
+        Real stories, real smiles.
+      </h2>
+      <p>
+        Nothing matters more than the trust and confidence of our customers.
+        Here’s what they share about their experience with Impressio Appliance:
+      </p>
+    </div>
+    <div class="tp-testimonial__wrapper fix">
+      <div class="swiper tp-testimonial-active">
+        <div class="swiper-wrapper">
+
+          <!-- Review 1 -->
+          <div class="swiper-slide">
+            <div class="tp-testimonial__item">
+              <div class="left-content">
+                <h3 class="tp-testimonial__author">Anita Thomas</h3>
+              </div>
+              <div class="right-content" data-bg-color="#EAF3B2">
+                <div class="rating-wrapper">
+                  <img src="assets/img/icon/rating.svg" alt="Ratings" />
+                  <span>(5 Stars)</span>
+                </div>
+                <p class="tp-testimonial__feedback">
+                  I recently purchased an Impressio refrigerator, and it has exceeded my expectations. 
+                  The design is elegant, and the cooling performance is amazing!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="swiper-slide">
+            <div class="tp-testimonial__item">
+              <div class="left-content">
+                <h3 class="tp-testimonial__author">Rahul Menon</h3>
+              </div>
+              <div class="right-content" data-bg-color="#C5E3FF">
+                <div class="rating-wrapper">
+                  <img src="assets/img/icon/rating.svg" alt="Ratings" />
+                  <span>(Highly Satisfied)</span>
+                </div>
+                <p class="tp-testimonial__feedback">
+                  The Impressio washing machine works like a charm! 
+                  Quiet, efficient, and saves a lot of water. Definitely recommending it to friends.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="swiper-slide">
+            <div class="tp-testimonial__item">
+              <div class="left-content">
+                <h3 class="tp-testimonial__author">Sneha Kapoor</h3>
+              </div>
+              <div class="right-content" data-bg-color="#FFEFD5">
+                <div class="rating-wrapper">
+                  <img src="assets/img/icon/rating.svg" alt="Ratings" />
+                  <span>(Excellent!)</span>
+                </div>
+                <p class="tp-testimonial__feedback">
+                  I love my new Impressio oven! It heats up quickly and makes cooking so easy.
+                  Great combination of looks and functionality.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="swiper-slide">
+            <div class="tp-testimonial__item">
+              <div class="left-content">
+                <h3 class="tp-testimonial__author">George Mathew</h3>
+              </div>
+              <div class="right-content" data-bg-color="#E0F8E0">
+                <div class="rating-wrapper">
+                  <img src="assets/img/icon/rating.svg" alt="Ratings" />
+                  <span>(Great Experience)</span>
+                </div>
+                <p class="tp-testimonial__feedback">
+                  Customer support was outstanding! The team guided me through every step of my purchase. 
+                  It’s rare to find such service these days.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="tp-testimonial__controls">
+        <div class="tp-testimonial__navigation">
+          <button class="prev testi-prev">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="next testi-next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="swiper-pagination tp-testi-pg"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- testimonial-area end -->
+
+          <!-- testimonial-area end -->
+
+          <!-- Doctor area start -->
+          <section class="tp-doctor__area tp-space-top tp-space-bottom">
+            <div class="container-1850">
+              <div class="tp-doctor__titlebox">
+                <h3 class="tp-section-subtitle mb-15">our specialists</h3>
+                <h2 class="tp-section-title-2 tp-chars">Meet Our Dentist</h2>
+              </div>
+              <div class="tp-doctor__list">
+                <div class="tp-doctor__card">
+                  <div class="tp-img-anim">
+                    <img
+                      src="assets/img/team/doctor-1.png"
+                      alt="Prof. Dr. Emily Davis"
+                    />
+                  </div>
+                  <h3 class="name">
+                    <a href="alex-casta.html">Prof. Dr. Emily Davis</a>
+                  </h3>
+                  <p>Orthodontist</p>
+                </div>
+                <div class="tp-doctor__card">
+                  <div class="tp-img-anim">
+                    <img
+                      src="assets/img/team/doctor-2.png"
+                      alt="Prof. Dr. Daniel Smith"
+                    />
+                  </div>
+                  <h3 class="name">
+                    <a href="james-smithon.html">Prof. Dr. Daniel Smith</a>
+                  </h3>
+                  <p>Oral Surgeon</p>
+                </div>
+                <div class="tp-doctor__card">
+                  <div class="tp-img-anim">
+                    <img
+                      src="assets/img/team/doctor-3.png"
+                      alt="Prof. Dr. Olivia Brown"
+                    />
+                  </div>
+                  <h3 class="name">
+                    <a href="rolex-botano.html">Prof. Dr. Olivia Brown</a>
+                  </h3>
+                  <p>Pediatric Dentist</p>
+                </div>
+                <div class="tp-doctor__card">
+                  <div class="tp-img-anim">
+                    <img
+                      src="assets/img/team/doctor-4.png"
+                      alt="Prof. Dr. Michael Johnson"
+                    />
+                  </div>
+                  <h3 class="name">
+                    <a href="lexaus-robathom.html">Prof. Dr. Michael Johnson</a>
+                  </h3>
+                  <p>Cosmetic Dentist</p>
+                </div>
+              </div>
+              <div class="tp-doctor__content">
+                <ul>
+                  <li>
+                    <img src="assets/img/icon/check.svg" alt="Icon" /> WHO
+                    hygiene standards followed.
+                  </li>
+                  <li>
+                    <img src="assets/img/icon/check.svg" alt="Icon" /> Emergency
+                    Dental Support.
+                  </li>
+                  <li>
+                    <img src="assets/img/icon/check.svg" alt="Icon" />
+                    Multilingual Staff.
+                  </li>
+                </ul>
+                <p>
+                  Work With Leading Specialists.
+                  <a href="contact.html"
+                    >Join as a Doctor
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_50_216"
+                        style="mask-type: alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="14"
+                        height="14"
+                      >
+                        <rect width="14" height="14" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_50_216)">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.3676 1.63776L1.63768 13.3676L0.632266 12.3622L12.3621 0.632339L13.3676 1.63776Z"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.8594 1.13503C9.49528 3.49911 9.64207 7.51072 11.8594 9.728L12.3621 10.2307L13.3675 9.22529L12.8648 8.72259C11.181 7.03885 11.0771 3.92808 12.8648 2.14045L13.3675 1.63774L12.3621 0.632325L11.8594 1.13503Z"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12.8648 2.14047C10.5008 4.50454 6.48916 4.35775 4.27188 2.14047L3.76917 1.63776L4.77458 0.632339L5.27729 1.13505C6.96036 2.81812 10.0718 2.92268 11.8594 1.13505L12.3621 0.632339L13.3676 1.63776L12.8648 2.14047Z"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Doctor area end -->
+
+          <!-- CTA area start -->
+          <section class="tp-cta__area">
+            <div class="container-1850">
+              <div class="tp-cta__wrapper">
+                <img
+                  src="assets/img/cta/cta-img.jpg"
+                  alt="Image"
+                  class="image"
+                  data-lag="0.1"
+                />
+                <!-- <img src="assets/img/cta/logo.png" alt="logo" class="logo" /> -->
+                <div class="tp-cta__box">
+                  <h2 class="title">We’re Listening to You!</h2>
+                  <p>
+                    Your feedback helps us create a better dental experience for
+                    everyone.
+                  </p>
+                  <a href="https://g.page/r/CZStfgON9jESEAE/review" class="tp-btn__1 tp-btn-bg-2"
+                    >Advice & Complain Box
+                    <span class="icon">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <mask
+                          id="mask0_50_217"
+                          style="mask-type: alpha"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="14"
+                          height="14"
+                        >
+                          <rect width="14" height="14" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_50_217)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M13.3676 1.63776L1.63768 13.3676L0.632266 12.3622L12.3621 0.632339L13.3676 1.63776Z"
+                            fill="#1E1D2B"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M11.8594 1.13503C9.49528 3.49911 9.64207 7.51072 11.8594 9.728L12.3621 10.2307L13.3675 9.22529L12.8648 8.72259C11.181 7.03885 11.0771 3.92808 12.8648 2.14045L13.3675 1.63774L12.3621 0.632325L11.8594 1.13503Z"
+                            fill="#1E1D2B"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M12.8648 2.14047C10.5008 4.50454 6.48916 4.35775 4.27188 2.14047L3.76917 1.63776L4.77458 0.632339L5.27729 1.13505C6.96036 2.81812 10.0718 2.92268 11.8594 1.13505L12.3621 0.632339L13.3676 1.63776L12.8648 2.14047Z"
+                            fill="#1E1D2B"
+                          />
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- CTA area end -->
+
+          <!-- Accordion area start -->
+         <section class="tp-accordion__area tp-space-top tp-space-bottom">
+  <div class="container">
+    <div class="tp-accordion__wrapper">
+      <div class="tp-accordion__titlebox">
+        <h2 class="tp-section-title-2 tp-chars">Question & Answer</h2>
+        <p>
+          Have questions about your dental care? Here are some of the most
+          common queries our patients ask at Neom Dental Care — from booking
+          appointments to treatment guidance.
+        </p>
+      </div>
+
+      <div class="accordion tp-accordion" id="tpAccordion">
+
+        <!-- Question 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#tpCollapse1"
+              aria-expanded="true"
+              aria-controls="tpCollapse1"
+            >
+              How often should I visit the dentist?
+            </button>
+          </h2>
+          <div
+            id="tpCollapse1"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#tpAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                It’s recommended to visit the dentist every 6 months for a
+                routine checkup and cleaning. Regular visits help detect and
+                prevent dental problems like cavities, gum disease, and oral
+                infections early.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#tpCollapse2"
+              aria-expanded="false"
+              aria-controls="tpCollapse2"
+            >
+              How can I book an appointment at Neom Dental Care?
+            </button>
+          </h2>
+          <div
+            id="tpCollapse2"
+            class="accordion-collapse collapse"
+            data-bs-parent="#tpAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                You can easily book an appointment by calling our clinic
+                directly or through our website’s “Book Now” section. Walk-in
+                appointments are also welcome based on availability.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#tpCollapse3"
+              aria-expanded="false"
+              aria-controls="tpCollapse3"
+            >
+              What dental treatments do you offer?
+            </button>
+          </h2>
+          <div
+            id="tpCollapse3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#tpAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                Neom Dental Care offers a full range of dental services,
+                including general dentistry, orthodontics (braces & aligners),
+                root canal treatment, teeth whitening, implants, and cosmetic
+                smile design.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#tpCollapse4"
+              aria-expanded="false"
+              aria-controls="tpCollapse4"
+            >
+              Do you provide emergency dental services?
+            </button>
+          </h2>
+          <div
+            id="tpCollapse4"
+            class="accordion-collapse collapse"
+            data-bs-parent="#tpAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                Yes, we offer emergency dental care for issues such as severe
+                tooth pain, broken teeth, or bleeding gums. Please contact us
+                immediately — our team will provide prompt attention and relief.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#tpCollapse5"
+              aria-expanded="false"
+              aria-controls="tpCollapse5"
+            >
+              What are your clinic hours?
+            </button>
+          </h2>
+          <div
+            id="tpCollapse5"
+            class="accordion-collapse collapse"
+            data-bs-parent="#tpAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                Our clinic operates Monday to Saturday from 9:00 AM to 8:00 PM,
+                and on Sundays from 10:00 AM to 5:00 PM. You can also contact us
+                on WhatsApp for appointment scheduling or inquiries.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+          <!-- Accordion area end -->
 
 
-</body>
 
+          <!-- Brand area start -->
+          <div class="tp-brand__area tp-space-bottom">
+            <div class="tp-brand__slider">
+              <div class="swiper tp-brand__active">
+                <div class="swiper-wrapper slide-transtion">
+                  <div class="swiper-slide">
+                    <div class="tp-brand__logo">
+                      <a href="#"
+                        ><img src="assets/img/brand/logo-1.png" alt="Logo"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tp-brand__logo">
+                      <a href="#"
+                        ><img src="assets/img/brand/logo-2.png" alt="Logo"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tp-brand__logo">
+                      <a href="#"
+                        ><img src="assets/img/brand/logo-3.png" alt="Logo"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tp-brand__logo">
+                      <a href="#"
+                        ><img src="assets/img/brand/logo-4.png" alt="Logo"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tp-brand__logo">
+                      <a href="#"
+                        ><img src="assets/img/brand/logo-5.png" alt="Logo"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tp-brand__logo">
+                      <a href="#"
+                        ><img src="assets/img/brand/logo-6.png" alt="Logo"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tp-brand__logo">
+                      <a href="#"
+                        ><img src="assets/img/brand/logo-1.png" alt="Logo"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tp-brand__logo">
+                      <a href="#"
+                        ><img src="assets/img/brand/logo-2.png" alt="Logo"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tp-brand__logo">
+                      <a href="#"
+                        ><img src="assets/img/brand/logo-3.png" alt="Logo"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Brand area end -->
+        </main>
+
+        <footer>
+          <section class="tp-footer__area black-bg tp-space-top">
+            <div class="container-1850">
+              <div class="row g-0">
+                <div class="col-xl-6 col-lg-4 col-md-12">
+                  <div class="tp-footer__widget">
+                    <div class="tp-footer__adress-box">
+                      <img style="height:80px" src="assets/img/logo/logo.png" alt="Logo" />
+                      <div class="address">
+                        <a href="#"
+                          >NEOM Dental Care, Hiba tower, Calicut Rd, behind SBI, Valanchery, Kavumpuram, Kerala 676552</a
+                        >
+                      </div>
+                      <div class="tp-copyright__social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="tp-footer__widget">
+                    <h3 class="tp-footer__widget-title">Quick Links</h3>
+                    <div class="tp-footer__list">
+                      <a href="#">Home</a>
+                      <a href="#">About</a>
+                      <a href="#">Services</a>
+                      <a href="#">Contact</a>
+                    </div>
+                  </div>
+                  <!-- <div class="tp-footer__contact-box">
+                    <div class="icon">
+                      <img src="assets/img/icon/phone.svg" alt="Phone Icon" />
+                    </div>
+                    <div class="contact-wrap">
+                      <p>Emergency Support</p>
+                      <a href="tel:18005551234">+1 (800) 555-1234</a>
+                    </div>
+                  </div> -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="tp-footer__widget right-align">
+                    <h3 class="tp-footer__widget-title">Services</h3>
+                    <div class="tp-footer__list">
+                      <a href="#">General Dentistry</a>
+                      <a href="#">Orthodontist</a>
+                      <a href="#">Cosmetic Dentistry</a>
+                      <a href="#">Dental Implement</a>
+                      <a href="#">Child’s Dentistry</a>
+                    </div>
+                  </div>
+                  <!-- <div class="tp-footer__contact-box right-align">
+                    <div class="icon">
+                      <img src="assets/img/icon/phone-2.svg" alt="Phone Icon" />
+                    </div>
+                    <div class="contact-wrap">
+                      <p>Doctors Appointment</p>
+                      <a href="tel:18008885436">+1 (800) 888-5436</a>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="tp-footer__text p-relative">Neom</div>
+            <div class="tp-copyright__style">
+              <div class="container-1850">
+                <div class="tp-copyright__wrap">
+                  <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-12">
+                      <div class="tp-copyright__text">
+                        <p>© 2025 <span>Draway Media</span>. All Rights Reserved.</p>
+                      </div>
+                    </div>
+                    <!-- <div class="col-xl-6 col-lg-6 col-md-12">
+                      <div class="tp-footer__menu">
+                        <a href="#">Legal Notice</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </footer>
+      </div>
+    </div>
+
+    <!-- JS here -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-bundle-min.js"></script>
+    <script src="assets/js/gsap.js"></script>
+    <script src="assets/js/gsap-scroll-smoother.js"></script>
+    <script src="assets/js/gsap-scroll-trigger.js"></script>
+    <script src="assets/js/gsap-scroll-to-plugin.js"></script>
+    <script src="assets/js/gsap-split-text.js"></script>
+    <script src="assets/js/chroma-min.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/purecounter.js"></script>
+    <script src="assets/js/jquery-knob.js"></script>
+    <script src="assets/js/jquery-appear.js"></script>
+    <script src="assets/js/beforeafter-min.js"></script>
+    <script src="assets/js/scroll-magic.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/animated-headline.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

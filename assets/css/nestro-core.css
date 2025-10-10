@@ -147,7 +147,7 @@ li,
   /* updated */
   --tp-theme-primary-2: #9FBAF1;
   /* updated */
-  --tp-theme-primary-3: #FCD091;
+  --tp-theme-primary-3: #3e9a7b;
   /* updated */
   --tp-theme-primary-4: #EAF3B2;
   /* updated */
@@ -1404,7 +1404,7 @@ div.demo img {
   font-weight: 600;
   text-align: center;
   counter-increment: count;
-  content: "0" counter(count);
+  content: "0"counter(count);
   color: var(--it-common-white);
   display: inline-block;
   transition: 0.3s;
@@ -1868,6 +1868,7 @@ xclip
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #3e9a7b;
 }
 
 .breadcrumb__shape {
@@ -1896,7 +1897,7 @@ xclip
 .breadcrumb__list span {
   font-size: 18px;
   font-style: italic;
-  color: var(--tp-common-black);
+  color: white;;
   margin-bottom: 20px;
 }
 
@@ -1904,7 +1905,7 @@ xclip
   font-size: 70px;
   line-height: 1em;
   margin-bottom: 6px;
-  color: var(--tp-common-black);
+  color: white;;
   letter-spacing: -0.01em;
 }
 
@@ -4627,10 +4628,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .rc__post-title {
-    font-size: 18px;
-    line-height: 26px;
-    display: inline-block;
-    color: var(--tp-common-black);
+  font-size: 18px;
+  line-height: 26px;
+  display: inline-block;
+  color: var(--tp-common-black);
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
